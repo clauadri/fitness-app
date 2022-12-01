@@ -1,3 +1,8 @@
+.navbar-container {
+width: 100%;
+background-color: rgba(226, 234, 236, 0.993);
+padding: 1em;
+}
 .logo-wrapper {
     font-size: 20px;
     color: rgb(55, 55, 55);
