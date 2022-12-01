@@ -1,7 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Styles.css";
+
 const Home = () => {
-  return <div>Home</div>;
+  const navigate = useNavigate();
+  const goToLogin = () => {
+    navigate("/login");
+  };
+  return (
+    <div>
+      <button onClick={goToLogin}>Start</button>
+    </div>
+  );
 };
 
 export default Home;
