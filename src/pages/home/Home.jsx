@@ -7,9 +7,14 @@ const Home = () => {
   const goToLogin = () => {
     navigate("/login");
   };
+
+  const chooseProgram = () => {
+    navigate("/step-goal");
+  };
   return (
     <div>
       <button onClick={goToLogin}>Start</button>
+      <button onClick={chooseProgram}>Select your program</button>
     </div>
   );
 };

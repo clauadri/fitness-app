@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import Login from "./pages/user-info/login/Login";
 import Register from "./pages/user-info/register/Register";
 import User from "./pages/user-info/user/User";
+import StepGoal from "./pages/steps/step-goal/StepGoal";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/User" element={<User></User>}></Route>
+        <Route path="/step-goal" element={<StepGoal></StepGoal>}></Route>
       </Routes>
     </div>
   );
