@@ -6,6 +6,7 @@ import Login from "./pages/user-info/login/Login";
 import Register from "./pages/user-info/register/Register";
 import User from "./pages/user-info/user/User";
 import StepGoal from "./pages/steps/step-goal/StepGoal";
+import StepTargetBody from "./pages/steps/step-target-body/StepTargetBody";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
         <Route path="/register" element={<Register />}></Route>
         <Route path="/User" element={<User></User>}></Route>
         <Route path="/step-goal" element={<StepGoal></StepGoal>}></Route>
+        <Route
+          path="/step-target-body"
+          element={<StepTargetBody></StepTargetBody>}
+        ></Route>
       </Routes>
     </div>
   );
