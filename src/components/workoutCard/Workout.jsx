@@ -1,15 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getWorkouts } from "../../redux/workouts/workouts.functions";
 
-const Workout = ({ workouts }) => {
-  const requirements = ["Perder peso", "Delgado"];
-  const exercises = workouts.map((workout) => workout);
-  // console.log(exercises);
-  const prueba = workouts.find((item) => item.requirements);
+const Workout = () => {
+
+  const [rutina, setRutina] = useState();
+  const dispatch = useDispatch();
+
+  const {workouts, userData, isLoading, error} = useSelector(state => state.workouts);
+
+  useEffect(() => {
+
+  dispatch(getWorkouts());
+    
+  setRutina(workouts.find(workout => {
+
+    return JSON.stringify(workout.requirements) === JSON.stringify(userData) 
+   })) 
+
+   
+
+  }, [workouts, userData])
+  
+
+
+  
   return (
     <div>
-      {/* {exercises.map((exercise) => {
-        return <div>{exercise.name}</div>;
-      })} */}
+    {console.log(rutina)}
+    {console.log(userData)}
     </div>
   );
 };
