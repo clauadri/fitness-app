@@ -2,14 +2,15 @@ import React from "react";
 
 const Workout = ({ workouts }) => {
   const requirements = ["Perder peso", "Delgado"];
-  const exercises = workouts.map((workout) => workout);
-  // console.log(exercises);
-  const prueba = workouts.find((item) => item.requirements);
+  const filterWorkout = workouts.filter(
+    (item) => item.requirements.join() === requirements.join()
+  );
+  console.log("filterWorkout", filterWorkout);
   return (
     <div>
-      {/* {exercises.map((exercise) => {
+      {filterWorkout.map((exercise) => {
         return <div>{exercise.name}</div>;
-      })} */}
+      })}
     </div>
   );
 };
