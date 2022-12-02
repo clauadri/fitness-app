@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "./Styles.css";
 
 const Login = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -12,8 +13,9 @@ const Login = () => {
 
   const send = async (formData) => {
     console.log(formData);
+    navigate("/");
   };
-  const navigate = useNavigate();
+
   const goToRegister = () => {
     navigate("/register");
   };
