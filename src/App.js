@@ -8,6 +8,7 @@ import User from "./pages/user-info/user/User";
 import StepGoal from "./pages/steps/step-goal/StepGoal";
 import StepTargetBody from "./pages/steps/step-target-body/StepTargetBody";
 import StepFinal from "./pages/steps/step-final/StepFinal";
+import StepBodytype from "./pages/steps/step-bodytype/StepBodytype";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           element={<StepTargetBody></StepTargetBody>}
         ></Route>
         <Route path="/step-final" element={<StepFinal/>}/>
+        <Route path="/step-bodytype" element={<StepBodytype/>} />
       </Routes>
     </div>
   );
