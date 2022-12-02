@@ -1,46 +1,17 @@
 import React from "react";
 
-const Workout = ({workouts}) => {
-
-const exercise = workouts.map((workout) => {
+const Workout = ({ workouts }) => {
+  const requirements = ["Perder peso", "Delgado"];
+  const exercises = workouts.map((workout) => workout);
+  // console.log(exercises);
+  const prueba = workouts.find((item) => item.requirements);
   return (
-    workout.exercise
-  )
-})
-
-  return (
-  <div>
-    <h1>{workouts[0]?.name}</h1>
-
-    {workouts[0].exercise.map((item) => {
-      return (
-        <div>
-          <p>{item.name}</p>
-          <p>{item.description}</p>
-        </div>
-
-      )
-    })}
-
-
-
-
-
-    {/* <div className="dia1">
-      <p>Ejercicio 1</p>
-      <p>{workouts[0]?.exercise[0].description}</p>
-      <p>Ejercicio 2</p>
-      <p>{workouts[0]?.exercise[1].description}</p>
+    <div>
+      {/* {exercises.map((exercise) => {
+        return <div>{exercise.name}</div>;
+      })} */}
     </div>
-    <div className="dia2">
-
-    </div>
-    <div className="dia3">
-
-    </div> */}
-        
-  </div>
-  )
+  );
 };
 
 export default Workout;
