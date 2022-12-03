@@ -17,6 +17,7 @@ const authReducer = (state = INITIAL_STATE, action) => {
         token: action.payload.token,
         error: false,
       };
+
     case "login_user_error":
       return {
         ...state,
@@ -43,10 +44,11 @@ const authReducer = (state = INITIAL_STATE, action) => {
     case "checkSession_start":
       return { ...state, isLoading: true };
     case "checkSession_ok":
+      console.log(action.payload);
       return {
         ...state,
         isLoading: false,
-        user: action.payload.user,
+        user: action.payload,
         token: action.payload.token,
         error: false,
       };

@@ -14,7 +14,6 @@ const Login = () => {
   } = useForm();
   const dispatch = useDispatch();
   const send = async (formData) => {
-    console.log(formData);
     dispatch(loginUser(formData, navigate));
     navigate("/");
   };
