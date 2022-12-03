@@ -17,7 +17,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="home-buttons">
       {!user ? (
         <div>
           <button onClick={goToLogin}>Start</button>

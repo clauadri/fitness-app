@@ -1,0 +1,15 @@
+.home-buttons button{
+    background: none;
+    border: solid 1px grey;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    background-color: gray;
+    color: #ffff;
+}
+.home-buttons button:hover{
+    background: none;
+    border: solid 1px #054368;
+    background-color: #054368;
+    color: #ffff;
+}
