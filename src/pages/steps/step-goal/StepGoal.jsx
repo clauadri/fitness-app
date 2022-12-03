@@ -25,15 +25,15 @@ const StepGoal = () => {
               nextStep(ev, dispatch, navigate, "/step-target-body-perder-peso")
             }
           />
-          <span className="step-goal-choise">
+          <div className="step-goal-choise">
             <h2>Perder peso</h2>
-          </span>
-          <span className="span-img">
-            <img 
+          </div>
+          <div className="cont-img">
+            <img className="span-img"
               src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FSLIM_SHREDDED_BODY.png&w=128&q=75"
               alt="perder-peso"
             />
-          </span>
+          </div>
         </label>
         <label>
           <input className="none"
@@ -49,15 +49,15 @@ const StepGoal = () => {
               )
             }
           />
-          <span className="step-goal-choise">
+          <div className="step-goal-choise">
             <h2>Crecer músculo</h2>
-          </span>
-          <span className="span-img">
-            <img
+          </div>
+          <div className="cont-img">
+            <img className="span-img"
               src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FHERO.png&w=128&q=75"
               alt="crecer-musculo"
             />
-          </span>
+          </div>
         </label>
         <label>
           <input className="none"
@@ -68,15 +68,15 @@ const StepGoal = () => {
               nextStep(ev, dispatch, navigate, "/step-target-body-definir")
             }
           />
-          <span className="step-goal-choise">
+          <div className="step-goal-choise">
             <h2>Define tu cuerpo</h2>
-          </span>
-          <span className="span-img">
-            <img
+          </div>
+          <div className="cont-img">
+            <img className="span-img"
               src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FBEACH_BODY.png&w=128&q=75"
               alt="definir"
             />
-          </span>
+          </div>
         </label>
       </div>
     </div>

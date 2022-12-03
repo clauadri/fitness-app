@@ -29,7 +29,6 @@
 }
 .step-goal-label label{
     display: flex;
-    height: 200px;
     margin-top: 10px;
     margin-bottom: 10px;
     flex-direction: row;
@@ -56,14 +55,9 @@
 .none{
     display: none;
 }
-.cont-img{
-   
-    height: 100px;
-    overflow: hidden;
-}
-.span-img {
-    
-    height: 200px;
+.span-img img{
+    /* width: 100%;
+    height: 400px; */
     object-fit: cover;
-    object-position: 0% 25%;
+    object-position: 50% 0%;
 }
