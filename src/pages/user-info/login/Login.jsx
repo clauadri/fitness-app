@@ -54,8 +54,7 @@ const Login = () => {
         <button>Login</button>
       </form>
       <div>
-        <p>You don´t have an account yet?</p>
-        <button onClick={goToRegister}>Register</button>
+        <a onClick={goToRegister}>Don´t have an account yet?</a>
       </div>
     </div>
   );

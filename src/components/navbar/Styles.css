@@ -1,5 +1,4 @@
 .navbar-container {
-width: 100%;
 background-color: rgba(226, 234, 236, 0.993);
 padding: 1em;
 display: flex;
@@ -11,5 +10,4 @@ justify-content: space-between;
 }
 .userName-wrapper {
     line-height: 1.5;
-    padding: 0 2em;
 }

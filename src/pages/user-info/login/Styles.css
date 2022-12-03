@@ -1,7 +1,7 @@
 .login-wrapper {
-  justify-content: center;
+  margin: 2em auto;
   padding: 1em 3em;
-  max-width: 300px;
+  max-width: 200px;
   text-align: center;
   border-radius: 20px;
   box-shadow: 0 11px 17px 5px rgba(128, 121, 121, 0.33);
@@ -14,17 +14,16 @@
   }
 
   .login {
-    min-height: 300px;
+    min-height: 230px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
   }
 
   .login-wrapper div {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 0;
   }
   .login-wrapper input {
     background: none;
@@ -50,4 +49,11 @@
     border: solid 1px lightseagreen;
     background-color: lightseagreen;
     color: #ffff;
+  }
+  .login-wrapper a {
+    min-width: 200px;
+    padding: 10px 0;
+  }
+  .login-wrapper a:hover {
+    color:lightseagreen;
   }

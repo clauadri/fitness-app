@@ -88,8 +88,7 @@ const Register = () => {
         <button>Register</button>
       </form>
       <div>
-        <p>already have an account?</p>
-        <button onClick={goToLogin}>Login</button>
+        <a onClick={goToLogin}>Already have an account?</a>
       </div>
     </div>
   );
