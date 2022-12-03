@@ -14,6 +14,13 @@ import StepBodytype from "./pages/steps/step-bodytype/StepBodytype";
 import { checkSession } from "./redux/auth/auth.actions";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
+import StepProblemArea from "./pages/steps/step-problem-areas/StepProblemAreas";
+import StepLevelFitness from "./pages/steps/step-level-fitness/StepLevelFitness";
+import StepLevelOfFat from "./pages/steps/step-level-of-fat/StepLevelOfFat";
+import StepWorkouts from "./pages/steps/step-workouts/StepWorkouts";
+import StepWorkoutIssues from "./pages/steps/step-workout-issues/StepWorkoutIssues";
+import StepAditionalGoals from "./pages/steps/step-additional-goals/StepAditionalGoals";
+import StepWorkoutFrequency from "./pages/steps/step-workout-frequency/StepWorkoutFrequency";
 
 function App() {
   const dispatch = useDispatch();
@@ -42,6 +49,16 @@ function App() {
         <Route
           path="/step-target-body-definir"
           element={<StepTargetBodyDefinir />}
+        />
+        <Route path="/step-problem-areas" element={<StepProblemArea />} />
+        <Route path="/step-level-of-fitness" element={<StepLevelFitness />} />
+        <Route path="/step-level-of-fat" element={<StepLevelOfFat />} />
+        <Route path="/step-workouts" element={<StepWorkouts />} />
+        <Route path="/step-workouts-issues" element={<StepWorkoutIssues />} />
+        <Route path="/step-additional-goals" element={<StepAditionalGoals />} />
+        <Route
+          path="step-workout-frequency"
+          element={<StepWorkoutFrequency />}
         />
         <Route path="/step-final" element={<StepFinal />} />
         <Route path="/step-bodytype" element={<StepBodytype />} />
