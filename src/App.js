@@ -11,6 +11,13 @@ import StepTargetBodyMusculo from "./pages/steps/step-target-body/StepTargetBody
 import StepTargetBodyDefinir from "./pages/steps/step-target-body/StepTargetBodyDefinir";
 import StepFinal from "./pages/steps/step-final/StepFinal";
 import StepBodytype from "./pages/steps/step-bodytype/StepBodytype";
+import StepProblemArea from "./pages/steps/step-problem-areas/StepProblemAreas";
+import StepLevelFitness from "./pages/steps/step-level-fitness/StepLevelFitness";
+import StepLevelOfFat from "./pages/steps/step-level-of-fat/StepLevelOfFat";
+import StepWorkouts from "./pages/steps/step-workouts/StepWorkouts";
+import StepWorkoutIssues from "./pages/steps/step-workout-issues/StepWorkoutIssues";
+import StepAditionalGoals from "./pages/steps/step-additional-goals/StepAditionalGoals";
+import StepWorkoutFrequency from "./pages/steps/step-workout-frequency/StepWorkoutFrequency";
 
 function App() {
   return (
@@ -25,6 +32,13 @@ function App() {
         <Route path="/step-target-body-perder-peso" element={<StepTargetBodyDelgado />}/>
         <Route path="/step-target-body-crecer-musculo" element={<StepTargetBodyMusculo />}/>
         <Route path="/step-target-body-definir" element={<StepTargetBodyDefinir />}/>
+        <Route path="/step-problem-areas" element={<StepProblemArea />}/>
+        <Route path="/step-level-of-fitness" element={<StepLevelFitness />}/>
+        <Route path="/step-level-of-fat" element={<StepLevelOfFat />}/>
+        <Route path="/step-workouts" element={<StepWorkouts />}/>
+        <Route path="/step-workouts-issues" element={<StepWorkoutIssues />}/>
+        <Route path="/step-additional-goals" element={<StepAditionalGoals/>}/>
+        <Route path="step-workout-frequency" element={<StepWorkoutFrequency/>}/>
         <Route path="/step-final" element={<StepFinal />}/>
         <Route path="/step-bodytype" element={<StepBodytype />} />
       </Routes>
