@@ -1,10 +1,9 @@
 import React from 'react'
-import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import nextStep from "../../../shared/nextStep";
+
 
 const StepWorkouts = () => {
-const dispatch = useDispatch();
+
 const navigate = useNavigate();
   return (
     <div>
@@ -35,7 +34,7 @@ const navigate = useNavigate();
             <span>Ningún otro</span>
         </label>
     </div>
-    <button onClick={(ev) => nextStep(ev, dispatch, navigate, '/step-workouts-issues')}>Continuar</button>
+    <button onClick={(ev) => navigate ('/step-workouts-issues')}>Continuar</button>
     </div>
   )
 }

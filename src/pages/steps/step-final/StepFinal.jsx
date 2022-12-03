@@ -27,7 +27,7 @@ const StepFinal = () => {
   return (
     <div>
         <div>
-            {console.log(rutina)}
+            {console.log('rutina',rutina)}
             {console.log(userData)}
         </div>
     </div>

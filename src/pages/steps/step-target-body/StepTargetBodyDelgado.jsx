@@ -25,7 +25,7 @@ const StepTargetBody = () => {
         </span>
       </label>
       <label>
-        <input name="delgado-tonificado" type="radio" value="Delgado y tonoficado" onClick={(ev) => nextStep(ev, dispatch, navigate, '/step-bodytype')}/>
+        <input name="delgado-tonificado" type="radio" value="Delgado y tonificado" onClick={(ev) => nextStep(ev, dispatch, navigate, '/step-bodytype')}/>
         <span>
           <h2>Delgado y tonificado</h2>
         </span>

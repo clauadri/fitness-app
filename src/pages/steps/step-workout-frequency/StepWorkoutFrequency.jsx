@@ -1,9 +1,8 @@
 import React from 'react'
-import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import nextStep from "../../../shared/nextStep";
+
 const StepWorkoutFrequency = () => {
-const dispatch = useDispatch();
+
 const navigate = useNavigate();
   return (
     <div>
@@ -27,7 +26,7 @@ const navigate = useNavigate();
             <span>Más de 3 veces por semana 🏆</span>
         </label>
     </div>
-    <button onClick={(ev) => nextStep(ev, dispatch, navigate, '/step-final')}>Continuar</button>
+    <button onClick={(ev) =>  navigate ('/step-final')}>Continuar</button>
     </div>
   )
 }
