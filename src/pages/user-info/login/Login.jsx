@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "./Styles.css";
+import { useDispatch } from "react-redux";
+import { loginUser } from "../../../redux/auth/auth.actions";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -10,15 +12,17 @@ const Login = () => {
     handleSubmit,
     formState: { errors, isValid },
   } = useForm();
-
+  const dispatch = useDispatch();
   const send = async (formData) => {
     console.log(formData);
+    dispatch(loginUser(formData, navigate));
     navigate("/");
   };
 
   const goToRegister = () => {
     navigate("/register");
   };
+
   return (
     <div className="login-wrapper">
       <div className="login-container">
@@ -26,14 +30,14 @@ const Login = () => {
           <h2>Login</h2>
           <div>
             <input
-              placeholder="User"
-              type="text"
+              placeholder="Email"
+              type="email"
               name="user"
-              {...register("user", {
-                required: "Introduce tu nombre de usuario, por favor",
+              {...register("email", {
+                required: "Introduce tu email, por favor",
                 minLength: {
                   value: 2,
-                  message: "el usuario tiene que ser mas largo",
+                  message: "el email tiene que ser mas largo",
                 },
               })}
             />
