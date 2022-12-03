@@ -10,6 +10,7 @@ import StepTargetBodyDelgado from "./pages/steps/step-target-body/StepTargetBody
 import StepTargetBodyMusculo from "./pages/steps/step-target-body/StepTargetBodyMusculo";
 import StepTargetBodyDefinir from "./pages/steps/step-target-body/StepTargetBodyDefinir";
 import StepFinal from "./pages/steps/step-final/StepFinal";
+import StepBodytype from "./pages/steps/step-bodytype/StepBodytype";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           element={<StepTargetBodyDefinir></StepTargetBodyDefinir>}
         ></Route>
         <Route path="/step-final" element={<StepFinal/>}/>
+        <Route path="/step-bodytype" element={<StepBodytype/>} />
       </Routes>
     </div>
   );
