@@ -6,7 +6,6 @@ export const getWorkouts = () => async (dispatch) => {
     try {
         const result = await API.get('/workouts')
         dispatch({type: 'getWorkouts', payload: result.data})
-        console.log(result.data);
     } catch (error) {
         dispatch({type: 'errorWorkouts', payload: error.message})
     }
