@@ -46,14 +46,15 @@
 
   .login-wrapper button:hover {
     background: none;
-    border: solid 1px lightseagreen;
-    background-color: lightseagreen;
+    border: solid 1px #054368;
+    background-color: #054368;
     color: #ffff;
   }
   .login-wrapper a {
     min-width: 200px;
     padding: 10px 0;
+    color: rgb(104, 105, 105);
   }
   .login-wrapper a:hover {
-    color:lightseagreen;
+    color:#054368;
   }
