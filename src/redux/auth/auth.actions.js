@@ -39,7 +39,7 @@ export const newUser = (formdata, navigate) => async (dispatch) => {
 export const checkSession = (token, navigate) => async (dispatch) => {
   dispatch({ type: "checkSession_start" });
   try {
-    const result = await API.post("users/checksession", formdata);
+    const result = await API.get("users/checksession");
     console.log(result);
     dispatch({
       type: "checkSession_ok",

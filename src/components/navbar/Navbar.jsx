@@ -21,7 +21,7 @@ const Navbar = () => {
       {user && (
         <div className="userName-wrapper">
           <NavLink activeclassname={"active"} to="/user">
-            Welcome {user.userName} <FontAwesomeIcon icon={faUser} />
+            Welcome {user.user} <FontAwesomeIcon icon={faUser} />
           </NavLink>
         </div>
       )}
