@@ -10,8 +10,10 @@
 }
 .user-menu-wrapper {
     display: flex;
+    line-height: 1.5;
 }
 .navbar-menu-wrapper {
+    display: flex;
     text-align: end;
 }
 .logo-wrapper {
@@ -25,11 +27,27 @@
     color: white;
 }
 
+.left-side {
+    text-align: end;
+    padding-top: 10px;
+    padding-right: 1em;
+    margin-bottom: -10px;
+}
 .logo-wrapper svg {
     animation: MoveUpDown 1s linear;
     animation-iteration-count: 10;
     position: relative;
     top: -1px;
+}
+.menu-close {
+    width: 17px;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flex-row div {
+    padding-left: 10px;
 }
 
 @keyframes MoveUpDown {
@@ -40,5 +58,3 @@
       bottom: 0;
     }
   }
-  
-  

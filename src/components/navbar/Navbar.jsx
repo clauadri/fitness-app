@@ -1,69 +1,80 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Styles.css";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell, faUser } from "@fortawesome/free-solid-svg-icons";
 import iconMenu from "../../assets/icon-menu.svg";
 import iconClose from "../../assets/icon-close-menu.svg";
-import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { logoutUser } from "../../redux/auth/auth.actions";
+import { useMediaQuery } from "react-responsive";
 
 const Navbar = () => {
   const { user, token } = useSelector((state) => state.auth);
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const logOut = () => {
-    dispatch(logoutUser(navigate));
+
+  const isWide = useMediaQuery({
+    query: "(min-width: 599px)",
+  });
+  const [menuIcon, setMenuIconToggle] = useState(true);
+  const handleMenuIcon = () => {
+    setMenuIconToggle(!menuIcon);
   };
 
-  const menuToggle = () => {};
   return (
-    <div className="navbar-container">
-      <NavLink activeclassname={"active"} to="/">
-        <div className="logo-wrapper">
-          <FontAwesomeIcon icon={faDumbbell} />
-          <span className="app-title"> The Fitness Advisor</span>
-        </div>
-      </NavLink>
-      <div className="navbar-menu-wrapper">
-        {user && (
-          <div className="user-menu-wrapper">
-            <div className="userName-wrapper">
-              <NavLink activeclassname={"active"} to="/user">
-                {user.user} <FontAwesomeIcon icon={faUser} />
-              </NavLink>
-            </div>
-            <div onClick={menuToggle}>
-              <img className="menu-btn" src={iconMenu} alt="menu button" />
-            </div>
+    <>
+      <div className="navbar-container">
+        <NavLink activeclassname={"active"} to="/">
+          <div className="logo-wrapper">
+            <FontAwesomeIcon icon={faDumbbell} />
+            <span className="app-title"> The Fitness Advisor</span>
           </div>
-        )}
-        <div>
-          {user && (
-            <>
-              <div onClick={menuToggle}>
-                <img className="menu-btn" src={iconClose} alt="close" />
-              </div>
-              {user?.rol === "admin" && (
-                <div className="userName-wrapper">
-                  <NavLink activeclassname={"active"} to="/edit-rutines">
-                    Editar rutinas
-                  </NavLink>
-                </div>
-              )}
+        </NavLink>
 
-              <div className="userName-wrapper">
-                <NavLink activeclassname={"active"} onClick={logOut}>
-                  Cerrar sesión
-                </NavLink>
+        <div className="navbar-menu-wrapper">
+          {user && menuIcon && !isWide ? (
+            <div className="user-menu-wrapper">
+              <div onClick={handleMenuIcon}>
+                <img className="menu-btn" src={iconMenu} alt="menu button" />
               </div>
-            </>
+            </div>
+          ) : (
+            <div>
+              {user && (
+                <>
+                  {!isWide && (
+                    <div onClick={handleMenuIcon}>
+                      <img
+                        className="menu-btn menu-close"
+                        src={iconClose}
+                        alt="close"
+                      />
+                    </div>
+                  )}
+                  <div className={isWide ? "flex-row" : ""}>
+                    {user?.rol === "admin" && (
+                      <>
+                        <div className="userName-wrapper">
+                          <NavLink activeclassname={"active"} to="/user">
+                            {user.user} <FontAwesomeIcon icon={faUser} />
+                          </NavLink>
+                        </div>
+                        <div className="userName-wrapper">
+                          <NavLink
+                            activeclassname={"active"}
+                            to="/edit-rutines"
+                          >
+                            Editar rutinas
+                          </NavLink>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                </>
+              )}
+            </div>
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
