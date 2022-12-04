@@ -17,16 +17,28 @@ const Home = () => {
   };
 
   return (
-    <div className="home-buttons">
-      {!user ? (
-        <div>
-          <button onClick={goToLogin}>Start</button>
-        </div>
-      ) : (
-        <div>
-          <button onClick={chooseProgram}>Select your program</button>
-        </div>
-      )}
+    <div className="main-wrapper">
+      <div>
+        <h1>
+          <div class="animation">
+            <span class="first">Don't sit </span>
+            <span class="oh">
+              <span class="second">get fit</span>
+            </span>
+          </div>
+        </h1>
+      </div>
+      <div className="home-buttons">
+        {!user ? (
+          <div>
+            <button onClick={goToLogin}>Start now</button>
+          </div>
+        ) : (
+          <div>
+            <button onClick={chooseProgram}>Select your program</button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

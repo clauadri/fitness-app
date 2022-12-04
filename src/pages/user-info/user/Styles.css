@@ -28,7 +28,7 @@
 }
 .user-btn:hover {
     background: none;
-    border: solid 1px lightseagreen;
-    background-color: lightseagreen;
+    border: solid 1px #054368;
+    background-color: #054368;
     color: #ffff;
 } 

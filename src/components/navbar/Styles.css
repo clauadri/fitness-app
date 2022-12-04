@@ -1,12 +1,11 @@
 
 .navbar-container {
-padding: 1em;
-display: flex;
-justify-content: space-between;
-
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
 }
 .logo-wrapper {
-    font-size: 20px;
+    font-size: 16px;
     color: white;
 }
 .userName-wrapper {
@@ -17,19 +16,19 @@ justify-content: space-between;
 }
 
 .logo-wrapper svg {
-    animation-name: rotate;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+    animation: MoveUpDown 1s linear;
+    animation-iteration-count: 10;
+    position: relative;
+    top: -1px;
 }
 
 
-@keyframes rotate {
-    from {
-      transform: rotate(0deg)
+@keyframes MoveUpDown {
+    0%, 1% {
+      top: 4px;
     }
-    to {
-      transform: rotate(30deg);
+    1% {
+      bottom: 0;
     }
   }
   
