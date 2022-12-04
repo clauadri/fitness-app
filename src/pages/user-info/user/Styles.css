@@ -40,3 +40,7 @@
     background-color: #054368;
     color: #ffff;
 } 
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
