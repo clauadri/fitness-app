@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .logo-wrapper {
     font-size: 16px;
     color: white;
@@ -22,7 +23,6 @@
     top: -1px;
 }
 
-
 @keyframes MoveUpDown {
     0%, 1% {
       top: 4px;
@@ -31,4 +31,5 @@
       bottom: 0;
     }
   }
+  
   

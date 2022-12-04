@@ -21,6 +21,7 @@ import StepWorkouts from "./pages/steps/step-workouts/StepWorkouts";
 import StepWorkoutIssues from "./pages/steps/step-workout-issues/StepWorkoutIssues";
 import StepAditionalGoals from "./pages/steps/step-additional-goals/StepAditionalGoals";
 import StepWorkoutFrequency from "./pages/steps/step-workout-frequency/StepWorkoutFrequency";
+import EditRutines from "./pages/edit-rutines/EditRutines";
 
 function App() {
   const dispatch = useDispatch();
@@ -62,6 +63,7 @@ function App() {
         />
         <Route path="/step-final" element={<StepFinal />} />
         <Route path="/step-bodytype" element={<StepBodytype />} />
+        <Route path="/edit-rutines" element={<EditRutines />} />
       </Routes>
     </div>
   );

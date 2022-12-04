@@ -18,13 +18,22 @@ const Navbar = () => {
           <span className="app-title"> The Fitness Advisor</span>
         </div>
       </NavLink>
-      {user && (
-        <div className="userName-wrapper">
-          <NavLink activeclassname={"active"} to="/user">
-            Welcome {user.user} <FontAwesomeIcon icon={faUser} />
-          </NavLink>
-        </div>
-      )}
+      <div className="navbar-menu-wrapper">
+        {user?.rol === "admin" && (
+          <div className="userName-wrapper">
+            <NavLink activeclassname={"active"} to="/edit-rutines">
+              Editar rutinas
+            </NavLink>
+          </div>
+        )}
+        {user && (
+          <div className="userName-wrapper">
+            <NavLink activeclassname={"active"} to="/user">
+              Welcome {user.user} <FontAwesomeIcon icon={faUser} />
+            </NavLink>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

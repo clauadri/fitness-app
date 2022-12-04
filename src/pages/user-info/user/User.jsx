@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logoutUser } from "../../../redux/auth/auth.actions";
 import { useSelector } from "react-redux";
+import iconClose from "../../../assets/icon-close-menu.svg";
 
 const User = () => {
   const { user, token } = useSelector((state) => state.auth);
@@ -14,12 +15,13 @@ const User = () => {
     dispatch(logoutUser(navigate));
   };
 
-  const Edit = () => {};
-
   console.log("info", user);
   return (
     <div>
       <div className="user-wrapper">
+        <button className="close-icon" onClick={() => navigate(-1)}>
+          <img src={iconClose} alt="close" />
+        </button>
         <div>
           <p>Nombre: {user?.name}</p>
           <p>Usuario: {user?.user}</p>
@@ -27,11 +29,8 @@ const User = () => {
           <p>Edad: {user?.age}</p>
         </div>
         <div className="btn-wrapper">
-          <button className="user-btn" onClick={Edit}>
-            Editar
-          </button>
           <button className="user-btn" onClick={logOut}>
-            Salir
+            Cerrar sesion
           </button>
         </div>
       </div>
