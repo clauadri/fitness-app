@@ -1,37 +1,61 @@
-import React from 'react'
+import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import "../step-workouts/CheckboxStyle.css";
 const StepWorkoutIssues = () => {
-
-const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
-    <div>
-    <h1>¿Has tenido estos problemas en tus intentos previos de preparación física?</h1>
-    <div>
-        <label>
-            <span><input type="checkbox" name='workoutsIssues'/></span>
-            <span>Falta de motivación</span>
+    <div className="steps-container-issues">
+      <h1>
+        ¿Has tenido estos problemas en tus intentos previos de preparación
+        física?
+      </h1>
+      <div className="checkbox-container">
+        <label className="checkbox-label">
+          <input type="checkbox" name="workoutsIssues" />
+          <p className="mark"></p>
         </label>
-        <label>
-            <span><input type="checkbox" name='workoutsIssues'/></span>
-            <span>No tenia un plan claro</span>
+        <p className="checkbox-label">Falta de motivación</p>
+      </div>
+      <div className="checkbox-container">
+        <label className="checkbox-label">
+          <input type="checkbox" name="workoutsIssues" />
+          <p className="mark"></p>
         </label>
-        <label>
-            <span><input type="checkbox" name='workoutsIssues'/></span>
-            <span>Mis ejercicios fueron muy duros</span>
+        <p className="checkbox-label">Falta de motivación</p>
+      </div>
+      <div className="checkbox-container">
+        <label className="checkbox-label">
+          <input type="checkbox" name="workoutsIssues" />
+          <p className="mark"></p>
         </label>
-        <label>
-            <span><input type="checkbox" name='workoutsIssues'/></span>
-            <span>Mal entrenador</span>
+        <p className="checkbox-label">No tenia un plan claro</p>
+      </div>
+      <div className="checkbox-container">
+        <label className="checkbox-label">
+          <input type="checkbox" name="workoutsIssues" />
+          <p className="mark"></p>
         </label>
-        <label>
-            <span><input type="checkbox" name='workoutsIssues'/></span>
-            <span>Ningún otro</span>
+        <p className="checkbox-label">Mis ejercicios fueron muy duros</p>
+      </div>
+      <div className="checkbox-container">
+        <label className="checkbox-label">
+          <input type="checkbox" name="workoutsIssues" />
+          <p className="mark"></p>
         </label>
+        <p className="checkbox-label">Mal entrenador</p>
+      </div>
+      <div className="checkbox-container">
+        <label className="checkbox-label">
+          <input type="checkbox" name="workoutsIssues" />
+          <p className="mark"></p>
+        </label>
+        <p className="checkbox-label">Ningún otro</p>
+      </div>
+      <button className="button-next" onClick={(ev) => navigate("/step-additional-goals")}>
+        Continuar
+      </button>
     </div>
-    <button onClick={(ev) =>  navigate ('/step-additional-goals')}>Continuar</button>
-    </div>
-  )
-}
+  );
+};
 
-export default StepWorkoutIssues
+export default StepWorkoutIssues;
