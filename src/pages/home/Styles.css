@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Monda&family=Oswald:wght@700&family=Patua+One&display=swap');
-
 .main-wrapper {
-    padding:  50px 30px;
+    padding:  30vh 30px;
 }
   
  h1 {
@@ -93,13 +91,12 @@
     border: solid 0.1px #cc482d ;
     padding: 10px;
     border-radius: 5px;
-    width: 100px;
     background-color: #cc482d ;
     color: #ffff;
 }
 .home-buttons button:hover{
     background: none;
-    border: solid 1px gray;
-    background-color: gray;
+    border: solid 1px #054368;
+    background-color: #054368;
     color: #ffff;
 }

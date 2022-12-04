@@ -31,11 +31,11 @@ const Home = () => {
       <div className="home-buttons">
         {!user ? (
           <div>
-            <button onClick={goToLogin}>Start now</button>
+            <button onClick={goToLogin}>Empieza ahora</button>
           </div>
         ) : (
           <div>
-            <button onClick={chooseProgram}>Select your program</button>
+            <button onClick={chooseProgram}>Selecciona tu programa</button>
           </div>
         )}
       </div>

@@ -42,7 +42,7 @@ const Login = () => {
         </div>
         <div>
           <input
-            placeholder="Password"
+            placeholder="Contraseña"
             type="password"
             name="password"
             {...register("password", {
@@ -54,7 +54,7 @@ const Login = () => {
         <button>Login</button>
       </form>
       <div>
-        <a onClick={goToRegister}>Don´t have an account yet?</a>
+        <a onClick={goToRegister}>No tienes una cuenta?</a>
       </div>
     </div>
   );
