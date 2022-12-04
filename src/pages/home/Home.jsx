@@ -20,10 +20,10 @@ const Home = () => {
     <div className="main-wrapper">
       <div>
         <h1>
-          <div class="animation">
-            <span class="first">Don't sit </span>
-            <span class="oh">
-              <span class="second">get fit</span>
+          <div className="animation">
+            <span className="first">Don't sit </span>
+            <span className="oh">
+              <span className="second">get fit</span>
             </span>
           </div>
         </h1>

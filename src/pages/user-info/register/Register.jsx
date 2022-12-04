@@ -25,10 +25,10 @@ const Register = () => {
   return (
     <div className="register-wrapper">
       <form onSubmit={handleSubmit(send)} className="register">
-        <h2>Register</h2>
+        <h2>Registrate</h2>
         <div>
           <input
-            placeholder="Name"
+            placeholder="Nombre"
             type="text"
             name="name"
             {...register("name", {
@@ -40,7 +40,7 @@ const Register = () => {
             })}
           />
           <input
-            placeholder="User name"
+            placeholder="Nombre de usuario"
             type="text"
             name="user"
             {...register("user", {
@@ -64,7 +64,7 @@ const Register = () => {
             })}
           />
           <input
-            placeholder="Password"
+            placeholder="Contraseña"
             type="password"
             name="password"
             {...register("password", {
@@ -73,7 +73,7 @@ const Register = () => {
             })}
           />
           <input
-            placeholder="Age"
+            placeholder="Edad"
             type="text"
             name="age"
             {...register("age", {
@@ -88,7 +88,7 @@ const Register = () => {
         <button>Register</button>
       </form>
       <div>
-        <a onClick={goToLogin}>Already have an account?</a>
+        <a onClick={goToLogin}>Ya tienes una cuenta?</a>
       </div>
     </div>
   );
