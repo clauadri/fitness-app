@@ -1,42 +1,58 @@
-import React from 'react'
+import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import "./CheckboxStyle.css";
 
 const StepWorkouts = () => {
-
-const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
-    <div>
-    <h1>¿Qué deportes te interesan?</h1>
-    <div>
-        <label>
-            <span><input type="checkbox" name='workouts'/></span>
-            <span>Entrenamiento en gimnasio</span>
+    <div className="steps-container">
+      <h1>¿Qué deportes te interesan?</h1>
+      <div class="checkbox-container">
+        <label class="checkbox-label">
+            <input type="checkbox" name="workouts" />
+            <p class="mark">Entrenamiento en gimnasio</p>
         </label>
-        <label>
-            <span><input type="checkbox" name='workouts'/></span>
-            <span>Entrenamiento en casa</span>
+      </div>
+      <div class="checkbox-container">
+        <label class="checkbox-label">
+          <input type="checkbox" name="workouts" />
+          <span class="mark">Entrenamiento en casa</span>
         </label>
-        <label>
-            <span><input type="checkbox" name='workouts'/></span>
-            <span>Boxeo</span>
+      </div>
+      <div class="checkbox-container">
+        <label class="checkbox-label">
+          <input type="checkbox" name="workouts" />
+          <span class="mark">Boxeo</span>
         </label>
-        <label>
-            <span><input type="checkbox" name='workouts'/></span>
-            <span>Artes marciales</span>
-        </label>
-        <label>
-            <span><input type="checkbox" name='workouts'/></span>
-            <span>Correr</span>
-        </label>
-        <label>
-            <span><input type="checkbox" name='workouts'/></span>
-            <span>Ningún otro</span>
-        </label>
-    </div>
-    <button onClick={(ev) => navigate ('/step-workouts-issues')}>Continuar</button>
-    </div>
-  )
-}
+      </div>
+      <div class="checkbox-container">
+        <label class="checkbox-label">
+          <input type="checkbox" name="workouts" />
 
-export default StepWorkouts
+          <span class="mark">Artes marciales</span>
+        </label>
+      </div>
+      <div class="checkbox-container">
+        <label class="checkbox-label">
+          <input type="checkbox" name="workouts" />
+
+          <span class="mark">Correr</span>
+        </label>
+      </div>
+      <div class="checkbox-container">
+        <label class="checkbox-label">
+          <input type="checkbox" name="workouts" />
+          <span class="mark">Ningún otro</span>
+        </label>
+      </div>
+      <button
+        className="button-next"
+        onClick={(ev) => navigate("/step-workouts-issues")}
+      >
+        Continuar
+      </button>
+    </div>
+  );
+};
+
+export default StepWorkouts;
