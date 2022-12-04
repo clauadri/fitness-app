@@ -49,12 +49,14 @@
     border: solid 1px #054368;
     background-color: #054368;
     color: #ffff;
+    cursor: pointer;
   }
   .login-wrapper a {
     min-width: 200px;
-    padding: 10px 0;
+    padding-bottom: 5px;
     color: rgb(104, 105, 105);
   }
   .login-wrapper a:hover {
     color:#054368;
+    cursor: pointer;
   }

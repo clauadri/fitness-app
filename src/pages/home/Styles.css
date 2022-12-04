@@ -99,4 +99,5 @@
     border: solid 0.1px rgb(121, 119, 119);
     background-color: #054368;
     color: #ffff;
+    cursor: pointer;
 }
