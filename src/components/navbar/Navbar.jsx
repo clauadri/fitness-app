@@ -41,21 +41,26 @@ const Navbar = () => {
           </div>
         )}
         <div>
-          <div onClick={menuToggle}>
-            <img className="menu-btn" src={iconClose} alt="close" />
-          </div>
-          {user?.rol === "admin" && (
-            <div className="userName-wrapper">
-              <NavLink activeclassname={"active"} to="/edit-rutines">
-                Editar rutinas
-              </NavLink>
-            </div>
+          {user && (
+            <>
+              <div onClick={menuToggle}>
+                <img className="menu-btn" src={iconClose} alt="close" />
+              </div>
+              {user?.rol === "admin" && (
+                <div className="userName-wrapper">
+                  <NavLink activeclassname={"active"} to="/edit-rutines">
+                    Editar rutinas
+                  </NavLink>
+                </div>
+              )}
+
+              <div className="userName-wrapper">
+                <NavLink activeclassname={"active"} onClick={logOut}>
+                  Cerrar sesión
+                </NavLink>
+              </div>
+            </>
           )}
-          <div className="userName-wrapper">
-            <NavLink activeclassname={"active"} onClick={logOut}>
-              Cerrar sesión
-            </NavLink>
-          </div>
         </div>
       </div>
     </div>
