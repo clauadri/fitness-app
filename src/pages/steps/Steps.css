@@ -5,6 +5,7 @@
     text-align: center;
     align-items: center;
     
+    
 }
 .steps-container h1{
     font-size: 40px;
@@ -21,8 +22,9 @@
     font-size: 28px;
 }
 .step-label{
-    width: 500px;
+    width: 600px;
     display: flex;
+    text-align: center;
     justify-content: center;
     flex-direction: column;
     
@@ -49,6 +51,20 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    
+}
+.step-options-bodytype{
+    display: flex;
+    
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.step-options-bodytype h2{
+    margin: 10px 0px 10px 0px;
+}
+.step-options-bodytype p{
+ margin: 0px;
 }
 .step-options h2{
     font-size: 24px;
@@ -57,7 +73,7 @@
     display: none;
 }
 .cont-img{
-    width: 150px;
+    width: 200px;
     height: 200px;
     overflow: hidden;
 }
@@ -65,4 +81,107 @@
     height: 400px;
     object-fit: cover;
 }
-
+.test-body-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 0.5px solid #9a9d9e;
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    ;
+}
+.bodytype-title-img{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bodytype-title-img p{
+    font-size: 20px;
+    margin-right: 100px;
+}
+.bodytype-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+.bodytype-info p{
+    padding: 0px 20px;
+    margin: 15px 0px;
+}
+.bodytype-info ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 20px;
+}
+.problem-area-img{
+    display: flex;
+    padding: 10px;
+}
+.fitness-input{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.text-level-fitness {
+    width: 600px;
+    background-color:  #9a9d9e;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text-level-fitness h3{
+    padding: 20px 0px 0px 20px;
+}
+.text-level-fitness p{
+    padding: 20px;
+    margin: 0px;
+}
+.button-next{
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 10px;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+.button-next:hover,
+.button-next:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+.button-next:hover {
+  transform: translateY(-1px);
+}
+.button-next:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+.percent-fat{
+    display: flex;
+    justify-content: center;
+}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import './InputRange.css'
 
 const StepLevelFitness = () => {
   const dispatch = useDispatch();
@@ -70,14 +71,15 @@ const StepLevelFitness = () => {
     console.log("valor", newValue);
   };
   return (
+    <div className="steps-container">
     <div>
-      <h1>¿En qué nivel fitness estás?</h1>
+    <h1>¿En qué nivel fitness estás?</h1>
       <p>
         Elige tu nivel fitness actual para alinearlo con el plan de ejercicios.
       </p>
-      <h3>{nivel}</h3>
-      <p>{text}</p>
-      <input
+    </div>
+    <div className="fitness-input">
+    <input
         type="range"
         name="levelfitness"
         value={value}
@@ -85,7 +87,15 @@ const StepLevelFitness = () => {
         max={10}
         onChange={(ev) => setValue(ev.target.value)}
       />
-      <button onClick={() => newNextStep()}>Continuar</button>
+    </div>
+      <div className="text-level-fitness">
+      <h3>{nivel}</h3>
+      <p>{text}</p>
+      </div>
+      <div >
+      <button className="button-next" onClick={() => newNextStep()}>Continuar</button>
+      </div>
+      
     </div>
   );
 };

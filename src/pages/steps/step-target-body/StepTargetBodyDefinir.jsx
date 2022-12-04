@@ -11,36 +11,41 @@ const StepTargetBody = () => {
  
   
   return (
+    <div className="steps-container">
     <div>
-      <p>Tu ojbetivo es Define tu cuerpo</p>
+    <p>Tu ojbetivo es Define tu cuerpo</p>
       <h2>Elige tu cuerpo deseado</h2>
+    </div>
+      <div className="step-label">
       <label>
-        <input name="de-playa" type="radio" value="Playa" onClick={(ev) => nextStep(ev, dispatch, navigate, '/step-bodytype')}/>
-        <span>
+        <input className="none" name="de-playa" type="radio" value="Playa" onClick={(ev) => nextStep(ev, dispatch, navigate, '/step-bodytype')}/>
+        <div className="step-options">
           <h2>De playa</h2>
-        </span>
-        <span>
+        </div>
+        <div className="cont-img">
         <img src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FBEACH_BODY.png&w=128&q=75" alt="playa" />
-        </span>
+        </div>
       </label>
       <label>
-        <input name="ejercitado" type="radio" value="Ejercitado" onClick={(ev) => nextStep(ev, dispatch, navigate, '/step-bodytype')}/>
-        <span>
+        <input className="none" name="ejercitado" type="radio" value="Ejercitado" onClick={(ev) => nextStep(ev, dispatch, navigate, '/step-bodytype')}/>
+        <div className="step-options">
           <h2>Ejercitado</h2>
-        </span>
-        <span>
+        </div>
+        <div className="cont-img">
         <img src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FWORKOUT_BODY.png&w=128&q=75" alt="ejercitado" />
-        </span>
+        </div>
       </label>
       <label>
-        <input name="crossfit" type="radio" value="Crossfit" onClick={(ev) => nextStep(ev, dispatch, navigate, '/step-bodytype')}/>
-        <span>
+        <input className="none" name="crossfit" type="radio" value="Crossfit" onClick={(ev) => nextStep(ev, dispatch, navigate, '/step-bodytype')}/>
+        <div className="step-options">
           <h2>De crossfit</h2>
-        </span>
-        <span>
+        </div>
+        <div className="cont-img">
         <img src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FCROSS_FIT_BODY.png&w=128&q=75" alt="crossfit" />
-        </span>
+        </div>
       </label>
+      </div>
+      
       
     </div>
     )

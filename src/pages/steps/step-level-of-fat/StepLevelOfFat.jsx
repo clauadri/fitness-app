@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-
+import './InputRange.css'
 
 const StepLevelOfFat = () => {
   
@@ -40,12 +40,15 @@ const StepLevelOfFat = () => {
   }
   },[value])
   return (
-    <div>
+    <div className="steps-container">
         <div>
-        <span className='fatlevel1'><img src={imagen} alt="5-9%" />{percent}</span>
+        <div ><img src={imagen} alt="img" /></div>
             <h1>Elige tu nivel de grasa corporal</h1>
+            <div className="fitness-input">
             <input type="range" name="levelfat" value={value} min={1} max={7} onChange={(ev) => setValue(ev.target.value)}/>
-            <button onClick={(ev) => navigate("/step-workouts")}>Continuar</button>
+            </div>
+            <p className='percent-fat'>{percent}</p>
+            <button className="button-next" onClick={(ev) => navigate("/step-workouts")}>Continuar</button>
         </div>
     </div>
   )
