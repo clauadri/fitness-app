@@ -1,11 +1,19 @@
-
-
+.steps-container-issues{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+}
+.steps-container-issues h1{
+        font-size: 32px;
+    }
 .checkbox-container {
 	display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    width: 600px;
-    height: 100px;
+    align-items: center;
+    width: 450px;
+    height: 90px;
     box-sizing: border-box;
     text-align:center;
     margin: 20px;
@@ -19,13 +27,15 @@
         align-items: center;
         position: relative;
         justify-content: space-around;
-        /* margin: auto; */
+        align-items: center;
+        text-align: center;
         cursor: pointer;
         font-size: 22px;
         line-height: 24px;
         height: 50px;
-        width: 100%;
-        clear: both;
+        width: 50;
+        margin: 20px;
+        /* clear: both; */
     }
 .checkbox-label input {
         position: absolute;
@@ -35,7 +45,7 @@
     
 .checkbox-label .mark {
         /* top:30px; */
-        position: absolute;
+        /* position: absolute; */
         height: 24px;
         width: 24px;
         background-color: transparent;
