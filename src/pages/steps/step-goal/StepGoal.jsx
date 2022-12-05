@@ -10,7 +10,7 @@ const StepGoal = () => {
 
   return (
     <div className="steps-container">
-      <div>
+      <div className="options-text-goal">
         <h1>CREA TU CUERPO PERFECTO</h1>
         <p>Obtén un plan de ejercicios personal</p>
         <h2>Elije tu meta</h2>

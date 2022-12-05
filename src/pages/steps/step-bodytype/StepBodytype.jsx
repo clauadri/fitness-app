@@ -9,7 +9,7 @@ const StepBodytype = () => {
 
   return (
     <div className="steps-container">
-      <div>
+      <div className="options-text-bodytype">
         <h1>Elige tu tipo de cuerpo</h1>
         <p>
           Elige el tipo de cuerpo más similar al tuyo. Puedes guiarte por las
@@ -50,7 +50,7 @@ const StepBodytype = () => {
               navigate ("/step-problem-areas")
             }
           />
-          <div className="step-options-boytype">
+          <div className="step-options-bodytype">
             <h2>Mesomorfo</h2>
             <p>Pierde grasa corporal fácilmente y gana músculo rápidamente</p>
           </div>

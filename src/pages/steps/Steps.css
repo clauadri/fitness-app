@@ -15,6 +15,7 @@
     color: white;
     text-align: start;
     margin: 30px 0px;
+    
 }
 .steps-container h2{
     color: white;
@@ -23,7 +24,7 @@
     font-size: 28px;
 }
 .step-label{
-    width: 600px;
+    width: 55%;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -56,7 +57,6 @@
 }
 .step-options-bodytype{
     display: flex;
-    
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
@@ -70,16 +70,34 @@
 .step-options h2{
     font-size: 24px;
 }
+.options-text-goal{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.options-text-bodytype{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.options-text-bodytype p{
+    text-align: center;
+    margin: 30px;
+}
 .none{
     display: none;
 }
 .cont-img{
-    width: 200px;
-    height: 200px;
+    width: 32%;
+    height:100%;
     overflow: hidden;
 }
 .cont-img img{
-    height: 400px;
+    height: 180%;
     object-fit: cover;
 }
 .test-body-type{
@@ -88,7 +106,7 @@
     justify-content: center;
     align-items: flex-start;
     border: 0.5px solid #9a9d9e;
-    width: 600px;
+    width: 55%;
     margin-top: 50px;
     margin-bottom: 50px;
     ;
@@ -126,9 +144,20 @@
     margin: 20px;
     display: flex;
     justify-content: center;
+    width:100%;
+}
+.fat-input{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+.info-level-fitness p{
+    text-align: center;
 }
 .text-level-fitness {
-    width: 600px;
+    width: 50%;
+    height: 150px;
     background-color:  #9a9d9e;
     display: flex;
     flex-direction: column;
@@ -185,4 +214,117 @@
 .percent-fat{
     display: flex;
     justify-content: center;
+}
+@media (min-width: 320px){
+    .steps-container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .step-label{
+        width: 100%;
+        display: flex;
+        text-align: center;
+         
+    }
+    .step-label label{
+        display: flex;
+        height: 110px;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0px 20px;
+        text-align: center;
+        align-items: center;
+        background-color: grey;
+    }
+    .step-options-bodytype{
+        width: 50%;
+    }
+    .step-options-bodytype p{
+        margin-bottom: 10px;
+    }
+    .background-color{
+        font-size: 20px;
+        margin: 0px;
+        text-align: center;
+    }
+    .bodytype-title-img p  {
+        margin: 0px;
+    }
+    .test-body-type{
+        width: 80%;
+    } 
+    .problem-area-img img{
+        width: 60%;
+    } 
+    .steps-container p{
+        font-size: 16px;
+    }
+    .img-fat img{
+        width: 40%;
+    }
+   
+}
+@media (min-width:641px) {
+    .steps-container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .step-label{
+        width: 100%;
+        display: flex;
+        text-align: center;
+         
+    }
+    .step-label label{
+        display: flex;
+        height: 160px;
+        width: 100%;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        background-color: grey;
+    }
+    .step-options-bodytype{
+        width: 50%;
+    }
+    .step-options-bodytype p{
+        margin-bottom: 10px;
+    }
+    .background-color{
+        font-size: 20px;
+        margin: 0px;
+        text-align: center;
+    }
+    .bodytype-title-img p  {
+        margin: 40px;
+    }
+    .test-body-type{
+        width: 80%;
+    } 
+    .problem-area-img img{
+        width: 60%;
+    } 
+    .steps-container p{
+        font-size: 16px;
+    }
+    .bodytype-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .bodytype-info p{
+        text-align: center;
+    }
+    .problem-area-img img{
+        width: 80%;
+    } 
+}
+@media (min-width: 1025px){
+    
 }

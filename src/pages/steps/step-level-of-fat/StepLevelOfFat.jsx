@@ -42,9 +42,9 @@ const StepLevelOfFat = () => {
   return (
     <div className="steps-container">
         <div>
-        <div ><img src={imagen} alt="img" /></div>
+        <div className='img-fat' ><img src={imagen} alt="img" /></div>
             <h1>Elige tu nivel de grasa corporal</h1>
-            <div className="fitness-input">
+            <div className="fat-input">
             <input type="range" name="levelfat" value={value} min={1} max={7} onChange={(ev) => setValue(ev.target.value)}/>
             </div>
             <p className='percent-fat'>{percent}</p>
