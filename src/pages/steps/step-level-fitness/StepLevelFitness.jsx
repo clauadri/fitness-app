@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import './InputRange.css'
+import "./InputRange.css";
 
 const StepLevelFitness = () => {
   const dispatch = useDispatch();
@@ -11,7 +11,7 @@ const StepLevelFitness = () => {
   const [text, setText] = useState(
     "Trato de hacer ejercicio una vez a la semana, pero todavía no es regular."
   );
-  const [newValue, setNewValue] = useState('A');
+  const [newValue, setNewValue] = useState("A");
 
   useEffect(() => {
     if (value <= 4) {
@@ -33,7 +33,7 @@ const StepLevelFitness = () => {
         );
       }
     } else if (value <= 7) {
-      setNewValue( "B");
+      setNewValue("B");
       setNivel("Aficionado");
       if (value == 5) {
         setText(
@@ -49,7 +49,7 @@ const StepLevelFitness = () => {
         );
       }
     } else if (value <= 10) {
-      setNewValue ("C");
+      setNewValue("C");
       setNivel("Pro");
       if (value == 8) {
         setText(
@@ -72,30 +72,32 @@ const StepLevelFitness = () => {
   };
   return (
     <div className="steps-container">
-    <div>
-    <h1>¿En qué nivel fitness estás?</h1>
-      <p>
-        Elige tu nivel fitness actual para alinearlo con el plan de ejercicios.
-      </p>
-    </div>
-    <div className="fitness-input">
-    <input
-        type="range"
-        name="levelfitness"
-        value={value}
-        min={1}
-        max={10}
-        onChange={(ev) => setValue(ev.target.value)}
-      />
-    </div>
+      <div className="info-level-fitness">
+      <h1>¿En qué nivel fitness estás?</h1>
+        <p>
+          Elige tu nivel fitness actual para alinearlo con el plan de
+          ejercicios.
+        </p>
+      </div>
+      <div className="fitness-input">
+        <input
+          type="range"
+          name="levelfitness"
+          value={value}
+          min={1}
+          max={10}
+          onChange={(ev) => setValue(ev.target.value)}
+        />
+      </div>
       <div className="text-level-fitness">
-      <h3>{nivel}</h3>
-      <p>{text}</p>
+        <h3>{nivel}</h3>
+        <p>{text}</p>
       </div>
-      <div >
-      <button className="button-next" onClick={() => newNextStep()}>Continuar</button>
+      <div>
+        <button className="button-next" onClick={() => newNextStep()}>
+          Continuar
+        </button>
       </div>
-      
     </div>
   );
 };

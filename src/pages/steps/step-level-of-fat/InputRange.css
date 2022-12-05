@@ -1,6 +1,6 @@
 input[type='range'] {
     display: block;
-    width: 400px;
+    width: 50%;
   }
   
   input[type='range']:focus {

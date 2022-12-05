@@ -11,3 +11,25 @@ body {
 
    background: linear-gradient(90deg,  #054368, #68352b 100vh); 
 }
+html{
+ scroll-behavior: smooth;
+ font-size: 14px;
+}
+h1{
+font-size: calc(1rem + 3vw);
+}
+h2{
+font-size: calc(1rem + 1.5vw);
+}
+h3{
+font-size: calc(1rem + 1.1vw);
+}
+p{
+font-size: calc(0.75rem + 1vw);
+}
+a{
+  font-size: calc(0.6rem + 1vw);
+}
+li{
+  font-size: calc(0.6rem + 1vw);
+}
