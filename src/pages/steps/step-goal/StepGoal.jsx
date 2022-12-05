@@ -3,7 +3,9 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import nextStep from "../../../shared/nextStep";
 import "../Steps.css";
-
+import perderPeso from "../../../assets/SLIM_SHREDDED_BODY.png"
+import crecerMusculo from "../../../assets/HERO.png"
+import definir from "../../../assets/definetucuerpo.png"
 const StepGoal = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -30,7 +32,7 @@ const StepGoal = () => {
           </div>
           <div className="cont-img">
             <img 
-              src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FSLIM_SHREDDED_BODY.png&w=128&q=75"
+              src={perderPeso}
               alt="perder-peso"
             />
           </div>
@@ -54,7 +56,7 @@ const StepGoal = () => {
           </div>
           <div className="cont-img">
             <img 
-              src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FHERO.png&w=128&q=75"
+              src={crecerMusculo}
               alt="crecer-musculo"
             />
           </div>
@@ -73,7 +75,7 @@ const StepGoal = () => {
           </div>
           <div className="cont-img">
             <img
-              src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FBEACH_BODY.png&w=128&q=75"
+              src={definir}
               alt="definir"
             />
           </div>

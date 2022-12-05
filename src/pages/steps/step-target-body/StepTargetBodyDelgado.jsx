@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import nextStep from "../../../shared/nextStep";
 import "../Steps.css";
+import delgado from "../../../assets/delgado.png"
+import delgadoTonificado from "../../../assets/delgadoytonificado.png"
 const StepTargetBody = () => {
 
   const dispatch = useDispatch();
@@ -23,7 +25,7 @@ const StepTargetBody = () => {
           <h2>Delgado</h2>
         </div>
         <div className="cont-img">
-        <img src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FSLIM_BODY.png&w=128&q=75" alt="delgado" />
+        <img src={delgado} alt="delgado" />
         </div>
       </label>
       <label>
@@ -32,7 +34,7 @@ const StepTargetBody = () => {
           <h2>Delgado y tonificado</h2>
         </div>
         <div className="cont-img">
-        <img src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FSLIM_SHREDDED_BODY.png&w=128&q=75" alt="delgado-tonificado" />
+        <img src={delgadoTonificado} alt="delgado-tonificado" />
         </div>
       </label>
       </div>

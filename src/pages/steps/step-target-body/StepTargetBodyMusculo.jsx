@@ -2,7 +2,9 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import nextStep from "../../../shared/nextStep";
-
+import atleta from "../../../assets/atleta.png"
+import heroe from "../../../assets/heroe.png"
+import culturista from "../../../assets/culturista.png"
 const StepTargetBody = () => {
 
   const dispatch = useDispatch();
@@ -23,7 +25,7 @@ const StepTargetBody = () => {
           <h2>Atleta</h2>
         </div>
         <div className="cont-img">
-        <img src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FATHLETE.png&w=128&q=75" alt="atleta" />
+        <img src={atleta} alt="atleta" />
         </div>
       </label>
       <label>
@@ -32,7 +34,7 @@ const StepTargetBody = () => {
           <h2>Héroe</h2>
         </div>
         <div className="cont-img">
-        <img src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FHERO.png&w=128&q=75" alt="heroe" />
+        <img src={heroe} alt="heroe" />
         </div>
       </label>
       <label>
@@ -41,7 +43,7 @@ const StepTargetBody = () => {
           <h2>Culturista</h2>
         </div>
         <div className="cont-img">
-        <img src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-muscles%2FBODYBUILDER.png&w=128&q=75" alt="culturista" />
+        <img src={culturista} alt="culturista" />
         </div>
       </label>
      </div>
