@@ -20,6 +20,10 @@ const workoutsReducer = (state = INITIAL_STATE, action) => {
             return {...state, usersStats: action.payload}
         case 'errorStats':
             return {...state, usersStats: [], error: action.payload}
+        case 'createExercise':
+            return {...state, isloading:false, error: false}
+        case 'errorCreatingExercise':
+            return{...state, loading: false, error: action.payload}
         default:
             return state;
     }
