@@ -96,8 +96,8 @@
 }
 .home-buttons button:hover{
     background: none;
-    border: solid 0.1px rgb(121, 119, 119);
-    background-color: #054368;
+    border: solid 0.1px #fa6400;
+    background-color: #fa6400;
     color: #ffff;
     cursor: pointer;
 }

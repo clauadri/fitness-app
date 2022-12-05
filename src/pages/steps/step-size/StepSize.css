@@ -2,6 +2,10 @@
     padding: 20px;
     margin-top: 30px
 }
+
+.form-container button {
+    margin: 0 30%;
+}
 .form-field {
     font-family: inherit;
     width: 100%;
@@ -31,4 +35,12 @@
     padding:0px 20px;
     text-align: left;
     padding: 10px;
+}
+.img-fat {
+    display: flex;
+    justify-content: center;
+}
+.step-level-wrapper {
+    display: flex;
+    flex-direction: column;
 }

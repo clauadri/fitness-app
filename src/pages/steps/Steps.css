@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
 }
 .step-label{
 
@@ -39,7 +40,7 @@
  margin: 0px;
 }
 .step-options h2{
-    font-size: 24px;
+    font-size: 18px;
 }
 .options-text-goal{
     justify-content: center;
@@ -71,6 +72,8 @@ padding: 0;
     width: 32%;
     height:100%;
     overflow: hidden;
+    display: flex;
+    justify-content: end;
 }
 .cont-img img{
     height: 180%;
@@ -150,7 +153,7 @@ padding: 0;
 .button-next{
   align-items: center;
   background-clip: padding-box;
-  background-color: #fa6400;
+  background-color: #cc482d;
   border: 1px solid transparent;
   border-radius: .25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -177,7 +180,7 @@ padding: 0;
 }
 .button-next:hover,
 .button-next:focus {
-  background-color: #fb8332;
+  background-color: #fa6400;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 .button-next:hover {
@@ -236,9 +239,6 @@ padding: 0;
     }
     .text-level-fitness {
         margin: 30px 0px;
-    }
-    .checkbox-label{
-        margin: 15px 0px;
     }
     .steps-container h1 {
         padding: 30px;
