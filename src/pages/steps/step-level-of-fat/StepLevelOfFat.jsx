@@ -2,7 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import './InputRange.css'
-
+import fase1 from "../../../assets/FROM_5_TO_9.png"
+import fase2 from "../../../assets/FROM_10_TO_14.png"
+import fase3 from "../../../assets/FROM_15_TO_19.png"
+import fase4 from "../../../assets/FROM_20_TO_24.png"
+import fase5 from "../../../assets/FROM_25_TO_29.png"
+import fase6 from "../../../assets/FROM_30_TO_34.png"
+import fase7 from "../../../assets/FROM_35_TO_39.png"
 const StepLevelOfFat = () => {
   
   const navigate = useNavigate();
@@ -12,30 +18,30 @@ const StepLevelOfFat = () => {
   const [percent, setPercent] = useState('');
   useEffect(()=>{
     if(value == 1){
-    setImagen('https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-fat-level%2FFROM_5_TO_9.png&w=256&q=75')
+    setImagen(fase1)
     setPercent('5-9%')
   }else if (value == 2){
-    setImagen('https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-fat-level%2FFROM_10_TO_14.png&w=256&q=75')
+    setImagen(fase2)
     setPercent('10-14%')
   }
   else if (value == 3){
-    setImagen('https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-fat-level%2FFROM_15_TO_19.png&w=256&q=75')
+    setImagen(fase3)
     setPercent('15-19%')
   }
   else if (value == 4){
-    setImagen('https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-fat-level%2FFROM_20_TO_24.png&w=256&q=75')
+    setImagen(fase4)
     setPercent('20-24%')
   }
   else if (value == 5){
-    setImagen('https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-fat-level%2FFROM_25_TO_29.png&w=256&q=75')
+    setImagen(fase5)
     setPercent('25-29%')
   }
   else if (value == 6){
-    setImagen('https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-fat-level%2FFROM_30_TO_34.png&w=256&q=75')
+    setImagen(fase6)
     setPercent('30-34%')
   }
   else if (value == 7){
-    setImagen('https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fbody-fat-level%2FFROM_35_TO_39.png&w=256&q=75')
+    setImagen(fase7)
     setPercent('35-39%')
   }
   },[value])
