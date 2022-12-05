@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Loading from "../../../components/loading/Loading";
 import { getWorkouts } from "../../../redux/workouts/workouts.functions";
-import Charts from "../../charts/Charts";
 
 const StepFinal = () => {
   const [rutina, setRutina] = useState();
   const dispatch = useDispatch();
 
+  const { user, token } = useSelector((state) => state.auth);
   const { workouts, userData, isLoading, error } = useSelector(
     (state) => state.workouts
   );
@@ -43,6 +43,13 @@ const StepFinal = () => {
                       <p> Series: {item?.description}</p>
                       <img src={item?.img} alt="" />
                       {item?.rest != 0 ? <p>Descanso: {item?.rest}</p> : ""}
+                      {user?.rol === "admin" && (
+                        <div>
+                          <button className="edit-button">
+                            Editar ejercicio
+                          </button>
+                        </div>
+                      )}
                     </div>
                   );
                 })}
@@ -58,6 +65,13 @@ const StepFinal = () => {
                       <p> Series: {item?.description}</p>
                       <img src={item?.img} alt="" />
                       {item?.rest != 0 ? <p>Descanso: {item?.rest}</p> : ""}
+                      {user?.rol === "admin" && (
+                        <div>
+                          <button className="edit-button">
+                            Editar ejercicio
+                          </button>
+                        </div>
+                      )}
                     </div>
                   );
                 })}
@@ -73,6 +87,13 @@ const StepFinal = () => {
                       <p> Series: {item?.description}</p>
                       <img src={item?.img} alt="" />
                       {item?.rest != 0 ? <p>Descanso: {item?.rest}</p> : ""}
+                      {user?.rol === "admin" && (
+                        <div>
+                          <button className="edit-button">
+                            Editar ejercicio
+                          </button>
+                        </div>
+                      )}
                     </div>
                   );
                 })}

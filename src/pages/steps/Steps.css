@@ -29,6 +29,7 @@
     max-width: 300px;
     max-height: 400px;
     margin: 30px;
+    justify-content: space-between;
     }
 .rutine-wrapper img {
     max-width: 159px;
@@ -41,8 +42,18 @@
     align-items: center;
     margin-top: 40px;
 }
-.step-label{
+.edit-button{
+    padding: 8px;
+    background: #d3d3d325;
+    border: 0.1px solid rgba(211, 211, 211, 0.377);
+    border-radius: 5px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
 
+.edit-button:hover{
+    background: #d3d3d360;
 }
 .step-label label{
     display: flex;
