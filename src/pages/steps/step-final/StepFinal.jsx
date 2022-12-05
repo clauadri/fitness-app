@@ -27,7 +27,7 @@ const StepFinal = () => {
   }, [workouts, userData]);
 
   return (
-    <div style={{width: 500}}>
+    <div>
       <div>
         {isLoading ? (
           <Loading />
