@@ -24,23 +24,25 @@
     font-size: 28px;
 }
 .step-label{
-    width: 55%;
+    
     display: flex;
     text-align: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    
     
 }
 .step-label label{
     display: flex;
     height: 200px;
+    min-width: 300px;
     margin-top: 10px;
     margin-bottom: 10px;
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 40px ;
     text-align: center;
-    background-color: grey;
+    background-color: #d3d3d325;
 }
 .step-label label:hover{
     background: none;
@@ -162,6 +164,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 .text-level-fitness h3{
     padding: 20px 0px 0px 20px;
@@ -231,16 +234,21 @@
     }
     .step-label label{
         display: flex;
-        height: 110px;
-        width: 100%;
+        height: 140px;
+        max-width: 350px;
         justify-content: space-evenly;
         padding: 0px 20px;
         text-align: center;
         align-items: center;
-        background-color: grey;
+        background-color:#d3d3d325;
+        margin: 10px;
+    }
+    .step-options{
+        min-width: 250px
     }
     .step-options-bodytype{
         width: 50%;
+       
     }
     .step-options-bodytype p{
         margin-bottom: 10px;
@@ -257,15 +265,35 @@
         width: 80%;
     } 
     .problem-area-img img{
-        width: 60%;
+        width: 80%;
     } 
     .steps-container p{
         font-size: 16px;
+        margin: 5px 0px;
+    }
+    .steps-container h2{
+        margin: 15px 0px;
     }
     .img-fat img{
         width: 40%;
     }
-   
+    .info-level-fitness p{
+        text-align: center;
+        margin: 20px;
+    }
+    .text-level-fitness {
+        margin: 30px 0px;
+    }
+    .checkbox-label{
+        margin: 15px 0px;
+    }
+    .steps-container h1 {
+        font-size: 28px;
+        padding: 30px;
+    }
+    .lose-weight{
+        margin-top: 40px;
+    }
 }
 @media (min-width:641px) {
     .steps-container{
@@ -275,7 +303,7 @@
         align-items: center;
         padding-bottom: 50px;
     }
-    .step-label{
+    /* .step-label{
         width: 100%;
         display: flex;
         text-align: center;
@@ -289,7 +317,7 @@
         text-align: center;
         align-items: center;
         background-color: grey;
-    }
+    } */
     .step-options-bodytype{
         width: 50%;
     }

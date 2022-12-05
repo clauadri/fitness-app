@@ -18,7 +18,7 @@ const StepWorkoutIssues = () => {
   return (
     <div className="steps-container-issues">
       <h1>
-        ¿Has tenido estos problemas en tus intentos previos de preparación
+        ¿Problemas en tus intentos previos de preparación
         física?
       </h1>
       <div className="checkbox-container">

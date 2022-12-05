@@ -14,7 +14,7 @@ const StepTargetBody = () => {
   
   return (
     <div className="steps-container">
-      <div>
+      <div className="lose-weight">
       <p>Tu ojbetivo es perder peso</p>
       <h2>Elige tu cuerpo deseado</h2>
       </div>
