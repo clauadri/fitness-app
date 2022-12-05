@@ -2,7 +2,10 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import nextStep from "../../../shared/nextStep";
-
+import pecho from "../../../assets/pecho.png"
+import brazos from "../../../assets/brazos.png"
+import abdomen from "../../../assets/abdomen.png"
+import piernas from "../../../assets/piernas.png"
 const StepProblemArea = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -25,7 +28,7 @@ const StepProblemArea = () => {
           </div>
           <div className="problem-area-img">
           <img
-            src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fproblem-areas%2Fw-120%2Fchest.png&w=128&q=75"
+            src={pecho}
             alt="pecho"
           />
           </div>
@@ -43,7 +46,7 @@ const StepProblemArea = () => {
           </div>
           <div className="problem-area-img">
           <img
-            src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fproblem-areas%2Fw-120%2Farms.png&w=128&q=75"
+            src={brazos}
             alt="brazos"
           />
           </div>
@@ -61,7 +64,7 @@ const StepProblemArea = () => {
           </div>
           <div className="problem-area-img">
           <img
-            src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fproblem-areas%2Fw-120%2Ftummy.png&w=128&q=75"
+            src={abdomen}
             alt="abdomen"
           />
           </div>
@@ -79,7 +82,7 @@ const StepProblemArea = () => {
           </div>
           <div className="problem-area-img">
           <img
-            src="https://madmuscles.com/_next/image?url=%2F_next%2Fstatic%2Fassets%2Fgqzsql1QkLs6XYCpGhvxJ%2Fimages%2Fproblem-areas%2Fw-120%2Flegs.png&w=128&q=75"
+            src={piernas}
             alt="piernas"
           />
           </div>
