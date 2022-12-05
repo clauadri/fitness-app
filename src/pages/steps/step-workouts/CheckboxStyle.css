@@ -18,9 +18,15 @@
   box-sizing: border-box;
   text-align: center;
   margin: 20px;
-  background-color: #9a9d9e;
+  background-color: #d3d3d325;
   border-radius: 3px;
 }
+
+.checkbox-container:hover {
+
+        background-color: #9a9d9e8f;
+
+      }
 
 .checkbox-label {
   color: white;

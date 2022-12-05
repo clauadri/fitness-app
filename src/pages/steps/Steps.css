@@ -137,14 +137,17 @@ padding: 0;
 .text-level-fitness {
     width: 50%;
     height: 150px;
-    background-color:  #9a9d9e;
+    background-color: #d3d3d325;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 3px;
-    
-    
 }
+
+.text-level-fitness:hover {
+    background-color: #91abbc7d;
+}
+
 .text-level-fitness h3{
     padding: 20px 0px 0px 20px;
 }
@@ -199,8 +202,6 @@ padding: 0;
 }
 
 
-/* //// */
-
     .step-options{
         min-width: 250px
     }
@@ -238,9 +239,6 @@ padding: 0;
     .info-level-fitness p{
         text-align: center;
         margin: 20px;
-    }
-    .text-level-fitness {
-        margin: 30px 0px;
     }
     .steps-container h1 {
         padding: 30px;
