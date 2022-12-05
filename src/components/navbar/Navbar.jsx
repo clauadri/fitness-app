@@ -50,13 +50,13 @@ const Navbar = () => {
                     </div>
                   )}
                   <div className={isWide ? "flex-row" : ""}>
+                    <div className="userName-wrapper">
+                      <NavLink activeclassname={"active"} to="/user">
+                        {user.user} <FontAwesomeIcon icon={faUser} />
+                      </NavLink>
+                    </div>
                     {user?.rol === "admin" && (
                       <>
-                        <div className="userName-wrapper">
-                          <NavLink activeclassname={"active"} to="/user">
-                            {user.user} <FontAwesomeIcon icon={faUser} />
-                          </NavLink>
-                        </div>
                         <div className="userName-wrapper">
                           <NavLink
                             activeclassname={"active"}
