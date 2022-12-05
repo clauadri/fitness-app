@@ -9,7 +9,7 @@ const StepGoal = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="steps-container">
       <div>
         <h1>CREA TU CUERPO PERFECTO</h1>
         <p>Obtén un plan de ejercicios personal</p>
