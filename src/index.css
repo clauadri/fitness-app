@@ -8,8 +8,7 @@ body {
   color: rgb(245, 245, 245);
   height: 100%;
   margin: 0;
-
-   background-color: rgba(0, 0, 0, 0.94);
+  background:linear-gradient(90deg, #06131b, #2b3b54 100vh);
 }
 html{
  scroll-behavior: smooth;
