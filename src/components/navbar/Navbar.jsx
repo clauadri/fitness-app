@@ -60,6 +60,14 @@ const Navbar = () => {
                         <div className="userName-wrapper">
                           <NavLink
                             activeclassname={"active"}
+                            to="/create-exercise"
+                          >
+                            Crear rutinas
+                          </NavLink>
+                        </div>
+                        <div className="userName-wrapper">
+                          <NavLink
+                            activeclassname={"active"}
                             to="/edit-rutines"
                           >
                             Editar rutinas
