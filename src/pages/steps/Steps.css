@@ -1,0 +1,330 @@
+.steps-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 50px;
+    
+    
+}
+.steps-container h1{
+    font-size: 40px;
+}
+.steps-container p{
+    color: white;
+    text-align: start;
+    margin: 30px 0px;
+    
+}
+.steps-container h2{
+    color: white;
+    text-align: start;
+    margin: 30px 0px;
+    font-size: 28px;
+}
+.step-label{
+    width: 55%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.step-label label{
+    display: flex;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 40px ;
+    text-align: center;
+    background-color: grey;
+}
+.step-label label:hover{
+    background: none;
+    border: solid 1px #9a9d9e;
+    background-color: #9a9d9e;
+    color: #ffff;
+}
+.step-options {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.step-options-bodytype{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.step-options-bodytype h2{
+    margin: 10px 0px 10px 0px;
+}
+.step-options-bodytype p{
+ margin: 0px;
+}
+.step-options h2{
+    font-size: 24px;
+}
+.options-text-goal{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.options-text-bodytype{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.options-text-bodytype p{
+    text-align: center;
+    margin: 30px;
+}
+.none{
+    display: none;
+}
+.cont-img{
+    width: 32%;
+    height:100%;
+    overflow: hidden;
+}
+.cont-img img{
+    height: 180%;
+    object-fit: cover;
+}
+.test-body-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 0.5px solid #9a9d9e;
+    width: 55%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    ;
+}
+.bodytype-title-img{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bodytype-title-img p{
+    font-size: 20px;
+    margin-right: 100px;
+}
+.bodytype-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+.bodytype-info p{
+    padding: 0px 20px;
+    margin: 15px 0px;
+}
+.bodytype-info ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 20px;
+}
+.problem-area-img{
+    display: flex;
+    padding: 10px;
+}
+.fitness-input{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.fat-input{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+.info-level-fitness p{
+    text-align: center;
+}
+.text-level-fitness {
+    width: 50%;
+    height: 150px;
+    background-color:  #9a9d9e;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text-level-fitness h3{
+    padding: 20px 0px 0px 20px;
+}
+.text-level-fitness p{
+    padding: 20px;
+    margin: 0px;
+}
+.button-next{
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 10px;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+.button-next:hover,
+.button-next:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+.button-next:hover {
+  transform: translateY(-1px);
+}
+.button-next:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+.percent-fat{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 320px){
+    .steps-container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .step-label{
+        width: 100%;
+        display: flex;
+        text-align: center;
+         
+    }
+    .step-label label{
+        display: flex;
+        height: 110px;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0px 20px;
+        text-align: center;
+        align-items: center;
+        background-color: grey;
+    }
+    .step-options-bodytype{
+        width: 50%;
+    }
+    .step-options-bodytype p{
+        margin-bottom: 10px;
+    }
+    .background-color{
+        font-size: 20px;
+        margin: 0px;
+        text-align: center;
+    }
+    .bodytype-title-img p  {
+        margin: 0px;
+    }
+    .test-body-type{
+        width: 80%;
+    } 
+    .problem-area-img img{
+        width: 60%;
+    } 
+    .steps-container p{
+        font-size: 16px;
+    }
+    .img-fat img{
+        width: 40%;
+    }
+   
+}
+@media (min-width:641px) {
+    .steps-container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .step-label{
+        width: 100%;
+        display: flex;
+        text-align: center;
+         
+    }
+    .step-label label{
+        display: flex;
+        height: 160px;
+        width: 100%;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        background-color: grey;
+    }
+    .step-options-bodytype{
+        width: 50%;
+    }
+    .step-options-bodytype p{
+        margin-bottom: 10px;
+    }
+    .background-color{
+        font-size: 20px;
+        margin: 0px;
+        text-align: center;
+    }
+    .bodytype-title-img p  {
+        margin: 40px;
+    }
+    .test-body-type{
+        width: 80%;
+    } 
+    .problem-area-img img{
+        width: 60%;
+    } 
+    .steps-container p{
+        font-size: 16px;
+    }
+    .bodytype-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .bodytype-info p{
+        text-align: center;
+    }
+    .problem-area-img img{
+        width: 80%;
+    } 
+}
+@media (min-width: 1025px){
+    
+}

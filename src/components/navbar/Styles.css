@@ -1,0 +1,60 @@
+
+.navbar-container {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-btn{
+    width: 20px;
+    padding: 0 0 0 10px;
+}
+.user-menu-wrapper {
+    display: flex;
+    line-height: 1.5;
+}
+.navbar-menu-wrapper {
+    display: flex;
+    text-align: end;
+}
+.logo-wrapper {
+    font-size: 16px;
+    color: white;
+}
+.userName-wrapper {
+    line-height: 1.5;
+}
+.userName-wrapper a {
+    color: white;
+}
+
+.left-side {
+    text-align: end;
+    padding-top: 10px;
+    padding-right: 1em;
+    margin-bottom: -10px;
+}
+.logo-wrapper svg {
+    animation: MoveUpDown 1s linear;
+    animation-iteration-count: 10;
+    position: relative;
+    top: -1px;
+}
+.menu-close {
+    width: 17px;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flex-row div {
+    padding-left: 10px;
+}
+
+@keyframes MoveUpDown {
+    0%, 1% {
+      top: 4px;
+    }
+    1% {
+      bottom: 0;
+    }
+  }
