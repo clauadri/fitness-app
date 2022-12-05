@@ -73,6 +73,11 @@ const Navbar = () => {
                             Editar rutinas
                           </NavLink>
                         </div>
+                        <div className="userName-wrapper">
+                          <NavLink activeclassname={"active"} to="/charts">
+                            Estadisticas
+                          </NavLink>
+                        </div>
                       </>
                     )}
                   </div>
