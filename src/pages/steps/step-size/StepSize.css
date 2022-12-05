@@ -1,3 +1,7 @@
+.form-container {
+    padding: 20px;
+    margin-top: 30px
+}
 .form-field {
     font-family: inherit;
     width: 100%;
@@ -12,9 +16,19 @@
     margin-bottom: 10px;
 } 
 .info-sobre-peso{
+    min-width: 300px;
+    max-width: 600px;
     margin-top: 20px ;
+    border: 0.1px solid rgba(211, 211, 211, 0.233);
+    margin: 30px;
+    padding: 20px;
+}
+
+.info-sobre-peso h3 {
+    text-align: center;
 }
 .info-sobre-peso p{
     padding:0px 20px;
-    text-align: center;
+    text-align: left;
+    padding: 10px;
 }
