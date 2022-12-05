@@ -25,7 +25,7 @@ const StepBodytype = () => {
             type="radio"
             value="Ectomorfo"
             onClick={(ev) =>
-              navigate ("/step-problem-areas")
+              navigate ("/step-size")
             }
           />
           <div className="step-options-bodytype">
@@ -47,7 +47,7 @@ const StepBodytype = () => {
             type="radio"
             value="Mesomorfo"
             onClick={(ev) =>
-              navigate ("/step-problem-areas")
+              navigate ("/step-size")
             }
           />
           <div className="step-options-boytype">
@@ -68,7 +68,7 @@ const StepBodytype = () => {
             type="radio"
             value="Endomorfo"
             onClick={(ev) =>
-              navigate ("/step-problem-areas")
+              navigate ("/step-size")
             }
           />
           <div className="step-options-bodytype">

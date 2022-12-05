@@ -1,22 +1,43 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import BarChart from '../../components/Charts/BarChart'
-import { UserData } from '../../Data'
+import { getStats } from '../../redux/workouts/workouts.functions'
 
 const Charts = () => {
+    const dispatch = useDispatch();
 
-    const [userInfo, setUserInfo] = useState({
-        labels: UserData.map((data) => data.year),
+    const { usersStats } = useSelector(
+        (state) => state.workouts
+      );
+
+    const [weightData, setWeightData] = useState({
+        labels: usersStats.map((data) => data._id),
         datasets: [{
-            label: 'Users gained',
-            data: UserData.map((data) => data.userGain),
-
+            label: 'Pesos',
+            data: usersStats.map((data) => data.weight),
+            backgroundColor: ['orange']
         }]
     });
 
+    const [heightData, setHeightData] = useState({
+        labels: usersStats.map((data) => data._id),
+        datasets: [{
+            label: 'Alturas',
+            data: usersStats.map((data) => data.height),
+            backgroundColor: ['blue']
+        }]
+    });
+
+    useEffect(() => {
+        dispatch(getStats());
+    },[]);
+
   return (
     <div>
-        <BarChart chartData={userInfo}/>
+        <BarChart chartData={weightData} />
+        <BarChart chartData={heightData} />
     </div>
   )
 }

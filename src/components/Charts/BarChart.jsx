@@ -4,7 +4,24 @@ import { Chart as ChartJS } from 'chart.js/auto'
 
 const BarChart = ({chartData}) => {
   return (
-    <Bar data={chartData}/>
+    <Bar 
+
+        data={chartData} 
+        options={{
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        display: false
+                    }
+                }
+            },
+        }}
+    />
   )
 }
 

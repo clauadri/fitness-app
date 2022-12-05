@@ -186,3 +186,8 @@
     display: flex;
     justify-content: center;
 }
+
+.chart-container {
+    width: 500px;
+    height: 500px;
+}

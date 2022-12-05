@@ -1,6 +1,7 @@
 const INITIAL_STATE = {
     workouts: [],
     userData: [],
+    usersStats: [],
     isLoading: false,
     error: false,
 }
@@ -15,6 +16,10 @@ const workoutsReducer = (state = INITIAL_STATE, action) => {
             return {...state, isLoading: false, workouts: [], error: action.payload}
         case 'addUserData':
             return {...state, userData: [...state.userData, action.payload] }
+        case 'getStats':
+            return {...state, usersStats: action.payload}
+        case 'errorStats':
+            return {...state, usersStats: [], error: action.payload}
         default:
             return state;
     }

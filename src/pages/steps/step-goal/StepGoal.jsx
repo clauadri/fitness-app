@@ -2,6 +2,8 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import nextStep from "../../../shared/nextStep";
+import Charts from "../../charts/Charts";
+import StepSize from "../step-size/StepSize";
 import "../Steps.css";
 
 const StepGoal = () => {
@@ -10,6 +12,8 @@ const StepGoal = () => {
 
   return (
     <div className="steps-container">
+    <div className="chart-container">
+    </div>
       <div>
         <h1>CREA TU CUERPO PERFECTO</h1>
         <p>Obtén un plan de ejercicios personal</p>
