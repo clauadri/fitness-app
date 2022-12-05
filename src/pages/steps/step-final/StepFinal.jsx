@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getWorkouts } from "../../../redux/workouts/workouts.functions";
+import Charts from "../../charts/Charts";
 
 const StepFinal = () => {
   const [rutina, setRutina] = useState();
@@ -25,7 +26,8 @@ const StepFinal = () => {
   }, [workouts, userData]);
 
   return (
-    <div>
+    <div style={{width: 500}}>
+     <Charts/>
       <div>
         {console.log("rutina", rutina)}
         {console.log(userData)}
