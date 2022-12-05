@@ -4,21 +4,28 @@ import "../step-workouts/CheckboxStyle.css";
 
 const StepAditionalGoals = () => {
   const navigate = useNavigate();
-  const value1 = useRef(null)
-  const value2 = useRef(null)
-  const value3 = useRef(null)
-  const value4 = useRef(null)
-  const value5 = useRef(null)
-  const value6 = useRef(null)
-  const nextPage = ()=>{
-      if(value1.current.checked || value2.current.checked || value3.current.checked ||value4.current.checked ||value5.current.checked ||value6.current.checked){
-          console.log(value1.current.checked);
-          navigate("/step-workout-frequency")
-      }
-  }
+  const value1 = useRef(null);
+  const value2 = useRef(null);
+  const value3 = useRef(null);
+  const value4 = useRef(null);
+  const value5 = useRef(null);
+  const value6 = useRef(null);
+  const nextPage = () => {
+    if (
+      value1.current.checked ||
+      value2.current.checked ||
+      value3.current.checked ||
+      value4.current.checked ||
+      value5.current.checked ||
+      value6.current.checked
+    ) {
+      console.log(value1.current.checked);
+      navigate("/step-workout-frequency");
+    }
+  };
   return (
     <div className="steps-container">
-      <p>
+      <p className="steps-text">
         Sabemos que no solo deseas un mejor cuerpo, sino también mejorar tu
         estilo de vida.
       </p>
