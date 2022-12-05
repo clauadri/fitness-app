@@ -27,7 +27,6 @@ const StepFinal = () => {
 
   return (
     <div style={{width: 500}}>
-     <Charts/>
       <div>
         {console.log("rutina", rutina)}
         {console.log(userData)}
