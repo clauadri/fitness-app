@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { API } from "../../shared/services/api";
+import { API, API2} from "../../shared/services/api";
 const CreateExercise = () => {
   const navigateTo = useNavigate();
   const dispatch = useDispatch();
@@ -12,7 +12,7 @@ const CreateExercise = () => {
   const createExercise = (data, navigateTo) => async (dispatch) => {
     try {
       console.log(data);
-      const result = await API.post("/exercises/create", data);
+      const result = await API2.post("/exercises/create", data);
       console.log(result);
       dispatch({ type: "createExercise" });
       localStorage.setItem("id", result.data._id);
@@ -24,13 +24,15 @@ const CreateExercise = () => {
   };
   const newExercise = async (datos) => {
     const formData = new FormData();
-    formData.append("tipo", datos.tipo);
-    formData.append("color", datos.color);
-    formData.append("precio", datos.precio);
-    formData.append("imagen", datos.img[0]);
-    formData.append("talla", datos.talla);
+    formData.append("name", datos.name);
+    formData.append("description", datos.description);
+    formData.append("rest", datos.rest);
+    formData.append("img", datos.img[0]);
+    console.log('datos.img[0]', datos.img[0])
     dispatch(createExercise(formData, navigateTo));
+    console.log('form',datos);
   };
+
 
   return (
     <div>
@@ -53,7 +55,7 @@ const CreateExercise = () => {
         </label>
         <label>
           <p>Tiempo de descanso</p>
-          <input
+          <input 
             type="number"
             name="rest"
             {...register("rest", { required: true })}
@@ -67,7 +69,7 @@ const CreateExercise = () => {
             {...register("img", { required: true })}
           />
         </label>
-        <button className="button-next">Crear ejercicio</button>
+        <button className="button-next" >Crear ejercicio</button>
       </form>
     </div>
   );
