@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { API } from "../../shared/services/api";
+import "./CreateExercise.css";
+
 const CreateExercise = () => {
   const navigateTo = useNavigate();
   const dispatch = useDispatch();
@@ -34,7 +36,10 @@ const CreateExercise = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit(newExercise)}>
+      <form
+        className="create-exercise-form"
+        onSubmit={handleSubmit(newExercise)}
+      >
         <label>
           <p>Nombre del ejercicio</p>
           <input
