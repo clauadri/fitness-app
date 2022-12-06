@@ -18,7 +18,8 @@ const Charts = () => {
         datasets: [{
             label: 'Pesos',
             data: usersStats.map((data) => data.weight),
-            backgroundColor: ['orange']
+            backgroundColor: ['#990033'],
+            borderColor: 'white',
         }]
     });
 
@@ -27,7 +28,8 @@ const Charts = () => {
         datasets: [{
             label: 'Alturas',
             data: usersStats.map((data) => data.height),
-            backgroundColor: ['blue']
+            backgroundColor: ['#862d86'],
+            borderColor: 'white',
         }]
     });
 
