@@ -64,7 +64,7 @@ const CreateExercise = () => {
         <label>
           <p>Tiempo de descanso</p>
           <input
-            type="number"
+            type="string"
             name="rest"
             {...register("rest", { required: true })}
           />
