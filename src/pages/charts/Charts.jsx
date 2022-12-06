@@ -1,3 +1,4 @@
+import { current } from '@reduxjs/toolkit'
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
@@ -7,12 +8,12 @@ import { getStats } from '../../redux/workouts/workouts.functions'
 import './Charts.css'
 
 const Charts = () => {
+    
     const dispatch = useDispatch();
 
     const { usersStats } = useSelector(
         (state) => state.workouts
       );
-
     const [weightData, setWeightData] = useState({
         labels: usersStats.map((data) => data._id),
         datasets: [{
@@ -32,6 +33,14 @@ const Charts = () => {
             borderColor: 'white',
         }]
     });
+    
+    // let countHeight = usersStats.map((data) => data.height);
+    // let sumHeight = countHeight.reduce((sum,item)=>sum + item)
+    // let avgHeight = sumHeight/countHeight.length
+    
+    // let countWeight = usersStats.map((data) => data.weight);
+    // let sumWeight = countWeight.reduce((sum,item)=>sum + item)
+    // let avgWeight = sumWeight/countWeight.length
 
     useEffect(() => {
         dispatch(getStats());
@@ -44,8 +53,9 @@ const Charts = () => {
                 <BarChart chartData={heightData} />
             </div>
             <div>
-                <p>Pesos de los usuarios en kilogramos.</p>
+                <p>Altura de los usuarios en centímetros.</p>
             </div>
+            <p>La media de la altura de los usuario de nuestra web es  cm.</p>
         </div>
         <div className='charts-box'>
             <div className='charts'>
@@ -53,6 +63,7 @@ const Charts = () => {
             </div>
             <div>
                 <p>Esta es una gráfica de los pesos de los usuarios almacenados.</p>
+                <p>La media de los pesos de los usuario de nuestra web es  kg.</p>
             </div>
         </div>
     </div>
