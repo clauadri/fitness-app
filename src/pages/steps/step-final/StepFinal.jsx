@@ -49,10 +49,13 @@ const StepFinal = () => {
                       {user?.rol === "admin" && (
                         <div>
                           <button
-                            className="edit-button"
+                            className="edit-delete-button"
                             onClick={() => navigate(`/edit/${item?._id}`)}
                           >
                             Editar ejercicio
+                          </button>
+                          <button className="edit-delete-button ">
+                            Borrar ejercicio
                           </button>
                         </div>
                       )}
@@ -73,8 +76,11 @@ const StepFinal = () => {
                       {item?.rest != 0 ? <p>Descanso: {item?.rest}</p> : ""}
                       {user?.rol === "admin" && (
                         <div>
-                          <button className="edit-button">
+                          <button className="edit-delete-button ">
                             Editar ejercicio
+                          </button>
+                          <button className="edit-delete-button ">
+                            Borrar ejercicio
                           </button>
                         </div>
                       )}
@@ -95,8 +101,11 @@ const StepFinal = () => {
                       {item?.rest != 0 ? <p>Descanso: {item?.rest}</p> : ""}
                       {user?.rol === "admin" && (
                         <div>
-                          <button className="edit-button">
+                          <button className="edit-delete-button ">
                             Editar ejercicio
+                          </button>
+                          <button className="edit-delete-button ">
+                            Borrar ejercicio
                           </button>
                         </div>
                       )}

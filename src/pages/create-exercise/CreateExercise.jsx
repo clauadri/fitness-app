@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImage } from "@fortawesome/free-solid-svg-icons";
 import "./CreateExercise.css";
-import { API, API2 } from "../../shared/services/api";
+import { API2 } from "../../shared/services/api";
 
 const CreateExercise = () => {
   const [selectedImage, setSelectedImage] = useState(null);
