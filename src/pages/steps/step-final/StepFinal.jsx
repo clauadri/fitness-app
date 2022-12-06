@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import Loading from "../../../components/loading/Loading";
 import { getWorkouts } from "../../../redux/workouts/workouts.functions";
 
 const StepFinal = () => {
   const [rutina, setRutina] = useState();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const { user, token } = useSelector((state) => state.auth);
   const { workouts, userData, isLoading, error } = useSelector(
@@ -37,15 +39,19 @@ const StepFinal = () => {
               <h1 className="rutine-day-title">Dia 1</h1>
               <div className="rutine-wrapper">
                 {rutina?.day1.map((item) => {
+                  console.log(item);
                   return (
-                    <div className="rutine-wrapper-day" key={item?.id}>
+                    <div className="rutine-wrapper-day" key={item?._id}>
                       <p>{item?.name}</p>
                       <p> Series: {item?.description}</p>
                       <img src={item?.img} alt="" />
                       {item?.rest != 0 ? <p>Descanso: {item?.rest}</p> : ""}
                       {user?.rol === "admin" && (
                         <div>
-                          <button className="edit-button">
+                          <button
+                            className="edit-button"
+                            onClick={() => navigate(`/edit/${item?._id}`)}
+                          >
                             Editar ejercicio
                           </button>
                         </div>
@@ -60,7 +66,7 @@ const StepFinal = () => {
               <div className="rutine-wrapper">
                 {rutina?.day2.map((item) => {
                   return (
-                    <div className="rutine-wrapper-day" key={item?.id}>
+                    <div className="rutine-wrapper-day" key={item?._id}>
                       <p>{item?.name}</p>
                       <p> Series: {item?.description}</p>
                       <img src={item?.img} alt="" />
@@ -82,7 +88,7 @@ const StepFinal = () => {
               <div className="rutine-wrapper">
                 {rutina?.day3.map((item) => {
                   return (
-                    <div className="rutine-wrapper-day" key={item?.id}>
+                    <div className="rutine-wrapper-day" key={item?._id}>
                       <p>{item?.name}</p>
                       <p> Series: {item?.description}</p>
                       <img src={item?.img} alt="" />

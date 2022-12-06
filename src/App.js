@@ -68,7 +68,7 @@ function App() {
         />
         <Route path="/step-final" element={<StepFinal />} />
         <Route path="/step-bodytype" element={<StepBodytype />} />
-        <Route path="/edit-rutines" element={<EditRutines />} />
+        <Route path="/edit/:id" element={<EditRutines />} />
         <Route path="/step-size" element={<StepSize />} />
       </Routes>
     </div>
