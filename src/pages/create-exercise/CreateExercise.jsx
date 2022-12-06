@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { API } from "../../shared/services/api";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
 import "./CreateExercise.css";
 
 const CreateExercise = () => {
@@ -35,7 +37,7 @@ const CreateExercise = () => {
   };
 
   return (
-    <div>
+    <div className="create-form-wrapper">
       <form
         className="create-exercise-form"
         onSubmit={handleSubmit(newExercise)}
@@ -65,10 +67,19 @@ const CreateExercise = () => {
           />
         </label>
         <label>
-          <p>Imagen</p>
+          <div className="add-image-btn">
+            <p>
+              Agregar imagen{" "}
+              <span>
+                {" "}
+                <FontAwesomeIcon icon={faDumbbell} />
+              </span>
+            </p>
+          </div>
           <input
             type="file"
             name="img"
+            style={{ display: "none" }}
             {...register("img", { required: true })}
           />
         </label>

@@ -1,3 +1,8 @@
+.create-form-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
 .create-exercise-form {
     display: flex;
     flex-direction: column;
@@ -14,4 +19,15 @@
     background: none;
     border-radius: 3px;
     border: 1px solid rgba(114, 123, 131, 0.493);
+}
+.add-image-btn {
+    border: 1px solid rgba(211, 211, 211, 0.281);
+    padding: 10px;
+    border-radius: 3px;
+    margin: 10px;
+    background-color: rgba(211, 211, 211, 0.548);
+    cursor: pointer;
+}
+.add-image-btn:hover {
+    background-color: rgba(219, 208, 208, 0.116);
 }
