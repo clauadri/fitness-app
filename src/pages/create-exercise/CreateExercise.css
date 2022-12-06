@@ -11,7 +11,7 @@
     padding: 30px;
     border-radius: 3px;
     margin: 50px;
-    max-width: 300px;
+    min-width: 300px;
 }
 .create-exercise-form input {
     padding: 10px;
@@ -19,6 +19,7 @@
     background: none;
     border-radius: 3px;
     border: 1px solid rgba(114, 123, 131, 0.493);
+    color: white;
 }
 .add-image-btn {
     border: 1px solid rgba(211, 211, 211, 0.281);
@@ -30,4 +31,7 @@
 }
 .add-image-btn:hover {
     background-color: rgba(219, 208, 208, 0.116);
+}
+.workout-image {
+    width: 100px;
 }

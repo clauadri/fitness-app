@@ -3,11 +3,12 @@ import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
+import { faImage } from "@fortawesome/free-solid-svg-icons";
 import "./CreateExercise.css";
 import { API, API2 } from "../../shared/services/api";
 
 const CreateExercise = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   const navigateTo = useNavigate();
   const dispatch = useDispatch();
 
@@ -43,6 +44,7 @@ const CreateExercise = () => {
         className="create-exercise-form"
         onSubmit={handleSubmit(newExercise)}
       >
+        <h1>Crear ejercicio</h1>
         <label>
           <p>Nombre del ejercicio</p>
           <input
@@ -67,13 +69,20 @@ const CreateExercise = () => {
             {...register("rest", { required: true })}
           />
         </label>
+        {selectedImage && (
+          <img
+            className="workout-image"
+            src={URL.createObjectURL(selectedImage)}
+            alt=""
+          />
+        )}
         <label>
           <div className="add-image-btn">
             <p>
               Agregar imagen{" "}
               <span>
                 {" "}
-                <FontAwesomeIcon icon={faDumbbell} />
+                <FontAwesomeIcon icon={faImage} />
               </span>
             </p>
           </div>
@@ -82,6 +91,10 @@ const CreateExercise = () => {
             name="img"
             style={{ display: "none" }}
             {...register("img", { required: true })}
+            onChange={(event) => {
+              console.log(event.target.files[0]);
+              setSelectedImage(event.target.files[0]);
+            }}
           />
         </label>
         <button className="button-next">Crear ejercicio</button>
