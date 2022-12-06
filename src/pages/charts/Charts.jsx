@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import BarChart from '../../components/Charts/BarChart'
 import { getStats } from '../../redux/workouts/workouts.functions'
+import './Charts.css'
 
 const Charts = () => {
     const dispatch = useDispatch();
@@ -17,7 +18,8 @@ const Charts = () => {
         datasets: [{
             label: 'Pesos',
             data: usersStats.map((data) => data.weight),
-            backgroundColor: ['orange']
+            backgroundColor: ['#990033'],
+            borderColor: 'white',
         }]
     });
 
@@ -26,7 +28,8 @@ const Charts = () => {
         datasets: [{
             label: 'Alturas',
             data: usersStats.map((data) => data.height),
-            backgroundColor: ['blue']
+            backgroundColor: ['#862d86'],
+            borderColor: 'white',
         }]
     });
 
@@ -35,9 +38,23 @@ const Charts = () => {
     },[]);
 
   return (
-    <div>
-        <BarChart chartData={weightData} />
-        <BarChart chartData={heightData} />
+    <div className='charts-container'>
+        <div className='charts-box'>
+            <div className='charts'>
+                <BarChart chartData={heightData} />
+            </div>
+            <div>
+                <p>Pesos de los usuarios en kilogramos.</p>
+            </div>
+        </div>
+        <div className='charts-box'>
+            <div className='charts'>
+                <BarChart chartData={weightData} />
+            </div>
+            <div>
+                <p>Esta es una gráfica de los pesos de los usuarios almacenados.</p>
+            </div>
+        </div>
     </div>
   )
 }
