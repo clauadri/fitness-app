@@ -72,6 +72,11 @@ const Navbar = () => {
                         </div>
                       </>
                     )}
+                    <div className="userName-wrapper">
+                      <NavLink activeclassname={"active"} to="/">
+                        Home
+                      </NavLink>
+                    </div>
                   </div>
                 </>
               )}

@@ -2,9 +2,10 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import nextStep from "../../../shared/nextStep";
-import ectomorfo from "../../../assets/ectomorfo.png"
-import mesomorfo from "../../../assets/mesomorfo.png"
-import endomorfo from "../../../assets/endomorfo.png"
+import ectomorfo from "../../../assets/ectomorfo.png";
+import mesomorfo from "../../../assets/mesomorfo.png";
+import endomorfo from "../../../assets/endomorfo.png";
+import determine from "../../../assets/determine-body-type.svg";
 const StepBodytype = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -26,9 +27,7 @@ const StepBodytype = () => {
             name="bodytype"
             type="radio"
             value="Ectomorfo"
-            onClick={(ev) =>
-              navigate ("/step-size")
-            }
+            onClick={(ev) => navigate("/step-size")}
           />
           <div className="step-options-bodytype">
             <h2>Ectomorfo</h2>
@@ -36,10 +35,7 @@ const StepBodytype = () => {
             <p>Le cuesta ganar peso.</p>
           </div>
           <div className="cont-img">
-            <img
-              src={ectomorfo}
-              alt="ectomorfo"
-            />
+            <img src={ectomorfo} alt="ectomorfo" />
           </div>
         </label>
         <label>
@@ -48,19 +44,14 @@ const StepBodytype = () => {
             name="bodytype"
             type="radio"
             value="Mesomorfo"
-            onClick={(ev) =>
-              navigate ("/step-size")
-            }
+            onClick={(ev) => navigate("/step-size")}
           />
           <div className="step-options-bodytype">
             <h2>Mesomorfo</h2>
             <p>Pierde grasa corporal fácilmente y gana músculo rápidamente</p>
           </div>
           <div className="cont-img">
-            <img
-              src={mesomorfo}
-              alt="mesomorfo"
-            />
+            <img src={mesomorfo} alt="mesomorfo" />
           </div>
         </label>
         <label>
@@ -69,9 +60,7 @@ const StepBodytype = () => {
             name="bodytype"
             type="radio"
             value="Endomorfo"
-            onClick={(ev) =>
-              navigate ("/step-size")
-            }
+            onClick={(ev) => navigate("/step-size")}
           />
           <div className="step-options-bodytype">
             <h2>Endomorfo</h2>
@@ -80,34 +69,40 @@ const StepBodytype = () => {
             </p>
           </div>
           <div className="cont-img">
-            <img
-              src={endomorfo}
-              alt="endomorfo"
-            />
+            <img src={endomorfo} alt="endomorfo" />
           </div>
         </label>
       </div>
 
       <div className="test-body-type">
-      <div className="bodytype-title-img">
-      <p>Test para determinar tu tipo de cuerpo</p>
-        <img
-          src="https://madmuscles.com/_next/static/assets/gqzsql1QkLs6XYCpGhvxJ/images/determine-body-type.svg"
-          alt="bodytype"
-        />
-      </div>
+        <div className="bodytype-title">
+          <p>Test para determinar tu tipo de cuerpo</p>
+        </div>
         <div className="bodytype-info">
           <p>
             Sujeta la muñeca con el pulgar y el dedo índice. Si eres diestro,
             usa tu mano derecha para agarrar tu muñeca izquierda.
           </p>
           <p> Pulgar e índice:</p>
-          <ul>
-            
-            <li> <b>Ectomorfo</b> — los dedos se tocan con facilidad.</li>
-            <li> <b>Mesomorfo</b> — apenas se tocan.</li>
-            <li> <b>Endomorfo</b> — no se tocan.</li>
-          </ul>
+          <div className="body-type-list-img">
+            <ul>
+              <li>
+                {" "}
+                <b>Ectomorfo</b> — los dedos se tocan con facilidad.
+              </li>
+              <li>
+                {" "}
+                <b>Mesomorfo</b> — apenas se tocan.
+              </li>
+              <li>
+                {" "}
+                <b>Endomorfo</b> — no se tocan.
+              </li>
+            </ul>
+            <div className="bodytype-icon">
+              <img src={determine} alt="bodytype" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

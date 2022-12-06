@@ -1,11 +1,13 @@
 import React from "react";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../components/footer/Footer";
 import "./Styles.css";
 
 const Home = () => {
   const { user } = useSelector((state) => state.auth);
-
+  
   const navigate = useNavigate();
 
   const goToLogin = () => {
@@ -15,8 +17,9 @@ const Home = () => {
   const chooseProgram = () => {
     navigate("/step-goal");
   };
-
+  
   return (
+    <>
     <div className="main-wrapper">
       <div>
         <h1>
@@ -39,7 +42,13 @@ const Home = () => {
           </div>
         )}
       </div>
+      
     </div>
+    <div>
+    <Footer/>
+    </div>
+    
+    </>
   );
 };
 

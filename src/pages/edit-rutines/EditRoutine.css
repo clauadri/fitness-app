@@ -1,0 +1,45 @@
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.edit-form p {
+  padding: 20px;
+}
+.edit-form button {
+  margin-top: 20px;
+}
+.edit-form input {
+  background: none;
+  border: none;
+  border: 1px solid #d3d3d342;
+  border-radius: 3px;
+  color: white;
+  padding: 4px;
+  margin-left: 5px;
+}
+.edit-form input::placeholder {
+  color: white;
+}
+
+.rutine-wrapper-edit {
+    display: flex;
+    padding: 2em 1em 6em 1em;
+    align-items: center;
+    flex-direction: column;
+    border: 0.1px solid #d3d3d32b;
+    border-radius: 5px;
+    max-width: 300px;
+    max-height: 400px;
+    margin: 30px;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .rutine-wrapper-edit img {
+    max-width: 159px;
+    min-height: 167px;
+    margin: 30px;
+    border-radius: 3px;
+  }
+ 

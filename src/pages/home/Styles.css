@@ -1,5 +1,8 @@
 .main-wrapper {
     padding:  30vh 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
   
  h1 {
@@ -101,3 +104,4 @@
     color: #ffff;
     cursor: pointer;
 }
+

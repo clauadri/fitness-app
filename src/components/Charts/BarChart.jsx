@@ -13,7 +13,7 @@ const BarChart = ({chartData}) => {
             aspectRatio: 2,
             plugins: {
                 tooltip: {
-                    enabled: false,
+                    enabled: true,
                 },
                 legend: {
                     display: false

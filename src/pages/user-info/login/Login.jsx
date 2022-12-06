@@ -48,7 +48,6 @@ const Login = () => {
               name="password"
               {...register("password", {
                 required: "El password tiene que existir",
-                // pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/,
               })}
             />
           </div>
