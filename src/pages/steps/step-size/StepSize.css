@@ -1,0 +1,57 @@
+.form-container {
+    padding: 20px;
+    margin-top: 30px
+}
+
+.form-container button {
+    margin: 0 30%;
+}
+.form-field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 0.1px solid #8080807a;
+    outline: 0;
+    font-size: 16px;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    margin-bottom: 10px;
+} 
+.form-field::placeholder {
+    color: rgba(248, 234, 234, 0.815);
+}
+.info-sobre-peso{
+    min-width: 300px;
+    max-width: 600px;
+    margin-top: 20px ;
+    border: 0.1px solid rgba(211, 211, 211, 0.233);
+    margin: 30px;
+    padding: 20px;
+}
+
+.info-sobre-peso h3 {
+    text-align: center;
+}
+.info-sobre-peso p{
+    padding:0px 20px;
+    text-align: left;
+    padding: 10px;
+}
+.img-fat {
+    display: flex;
+    justify-content: center;
+}
+.step-level-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}

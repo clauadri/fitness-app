@@ -48,3 +48,7 @@
     display: flex;
     justify-content: center;
 }
+
+.user-wrapper p {
+    color: rgb(58, 57, 57);
+}

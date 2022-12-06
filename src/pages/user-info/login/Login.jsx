@@ -25,7 +25,7 @@ const Login = () => {
   return (
     <div className="login-wrapper">
       <form onSubmit={handleSubmit(send)} className="login">
-        <h2>Login</h2>
+        <h2 className="login-title">Login</h2>
         <div className="inputs-wrapper">
           <div>
             <input

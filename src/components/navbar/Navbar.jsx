@@ -50,19 +50,24 @@ const Navbar = () => {
                     </div>
                   )}
                   <div className={isWide ? "flex-row" : ""}>
+                    <div className="userName-wrapper">
+                      <NavLink activeclassname={"active"} to="/user">
+                        {user.user} <FontAwesomeIcon icon={faUser} />
+                      </NavLink>
+                    </div>
                     {user?.rol === "admin" && (
                       <>
                         <div className="userName-wrapper">
-                          <NavLink activeclassname={"active"} to="/user">
-                            {user.user} <FontAwesomeIcon icon={faUser} />
+                          <NavLink
+                            activeclassname={"active"}
+                            to="/create-exercise"
+                          >
+                            Crear rutinas
                           </NavLink>
                         </div>
                         <div className="userName-wrapper">
-                          <NavLink
-                            activeclassname={"active"}
-                            to="/edit-rutines"
-                          >
-                            Editar rutinas
+                          <NavLink activeclassname={"active"} to="/charts">
+                            Estadisticas
                           </NavLink>
                         </div>
                       </>
