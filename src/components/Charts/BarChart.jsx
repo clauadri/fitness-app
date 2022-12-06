@@ -8,7 +8,13 @@ const BarChart = ({chartData}) => {
 
         data={chartData} 
         options={{
+            responsive: true,
+            maintainAspectRatio: true,
+            aspectRatio: 2,
             plugins: {
+                tooltip: {
+                    enabled: false,
+                },
                 legend: {
                     display: false
                 }
