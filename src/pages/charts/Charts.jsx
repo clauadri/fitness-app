@@ -55,7 +55,7 @@ const Charts = () => {
             <div>
                 <p>Altura de los usuarios en centímetros.</p>
             </div>
-            <p>La media de la altura de los usuario de nuestra web es  cm.</p>
+            {/* <p>La media de la altura de los usuario de nuestra web es  cm.</p> */}
         </div>
         <div className='charts-box'>
             <div className='charts'>
@@ -63,7 +63,7 @@ const Charts = () => {
             </div>
             <div>
                 <p>Esta es una gráfica de los pesos de los usuarios almacenados.</p>
-                <p>La media de los pesos de los usuario de nuestra web es  kg.</p>
+                {/* <p>La media de los pesos de los usuario de nuestra web es  kg.</p> */}
             </div>
         </div>
     </div>
